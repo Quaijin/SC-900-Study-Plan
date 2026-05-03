@@ -1,0 +1,31 @@
+site_name: SC-900 Study Plan
+site_url: https://Quaijin.github.io/sc-900-study-plan/
+site_description: Microsoft Security, Compliance and Identity Fundamentals
+site_author: Luis
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: blue
+    accent: cyan
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+
+nav:
+  - Home: index.md
+  - SC-900:
+      - Domain 1: sc-900/domain-1.md
+      - Domain 2: sc-900/domain-2.md
+      - Domain 3: sc-900/domain-3.md
+      - Domain 4: sc-900/domain-4.md
+  - Labs:
+      - Lab 01 - Explore Entra ID: labs/lab-01.md
+      - Lab 02 - Conditional Access: labs/lab-02.md
+  - Resources:
+      - Useful Links: resources/links.md
+      - Exam Tips: resources/exam-tips.md
