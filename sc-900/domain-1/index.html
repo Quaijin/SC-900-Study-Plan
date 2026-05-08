@@ -1,0 +1,2268 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Microsoft Security, Compliance and Identity Fundamentals">
+      
+      
+        <meta name="author" content="Luis">
+      
+      
+        <link rel="canonical" href="https://Quaijin.github.io/sc-900-study-plan/sc-900/domain-1/">
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../domain-2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Domain 1 - SC-900 Study Plan</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sc-900-domain-1-security-compliance-identity-concepts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SC-900 Study Plan" class="md-header__button md-logo" aria-label="SC-900 Study Plan" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SC-900 Study Plan
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Domain 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  SC-900
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../labs/lab-01/" class="md-tabs__link">
+          
+  
+  
+  Labs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../resources/links/" class="md-tabs__link">
+          
+  
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SC-900 Study Plan" class="md-nav__button md-logo" aria-label="SC-900 Study Plan" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SC-900 Study Plan
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SC-900
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SC-900
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-shared-responsibility-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Shared Responsibility Model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Shared Responsibility Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-model-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Service Model Definitions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-defense-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Defense-in-Depth
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Defense-in-Depth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-7-layers-outer-inner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 7 Layers (outer → inner)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-zero-trust-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Zero Trust Model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Zero Trust Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-three-guiding-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Three Guiding Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-six-foundational-pillars" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Six Foundational Pillars
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-encryption-hashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Encryption &amp; Hashing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Encryption &amp; Hashing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encryption
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Encryption">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Encryption
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encryption-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encryption States
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hashing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hashing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#salting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Salting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-key-vault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Azure Key Vault
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-identity-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Identity Concepts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Identity Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-identity-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Identity Terms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Identities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-authentication-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Authentication &amp; Authorization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Authentication &amp; Authorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-authn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication (AuthN)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authorization-authz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization (AuthZ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-federation-single-sign-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Federation &amp; Single Sign-On
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Federation &amp; Single Sign-On">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#federation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Federation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#single-sign-on-sso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Single Sign-On (SSO)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-governance-risk-compliance-grc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Governance, Risk &amp; Compliance (GRC)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-cia-triad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. CIA Triad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-exam-tips-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Exam Tips &amp; Key Takeaways
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Exam Tips &amp; Key Takeaways">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#must-know-for-the-exam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Must-Know for the Exam
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-exam-traps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Common Exam Traps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#official-microsoft-learn-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Official Microsoft Learn Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Labs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Labs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../labs/lab-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 01 - Explore Entra ID
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../labs/lab-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 02 - Conditional Access
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Resources
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Useful Links
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/exam-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exam Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-shared-responsibility-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Shared Responsibility Model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Shared Responsibility Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-model-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Service Model Definitions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-defense-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Defense-in-Depth
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Defense-in-Depth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-7-layers-outer-inner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The 7 Layers (outer → inner)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-zero-trust-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Zero Trust Model
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Zero Trust Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-three-guiding-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Three Guiding Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-six-foundational-pillars" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Six Foundational Pillars
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-encryption-hashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Encryption &amp; Hashing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Encryption &amp; Hashing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encryption
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Encryption">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Encryption
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encryption-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Encryption States
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hashing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hashing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#salting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Salting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-key-vault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Azure Key Vault
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-identity-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Identity Concepts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Identity Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-identity-terms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Identity Terms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Identities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-authentication-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Authentication &amp; Authorization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Authentication &amp; Authorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-authn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication (AuthN)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authorization-authz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authorization (AuthZ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-federation-single-sign-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Federation &amp; Single Sign-On
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Federation &amp; Single Sign-On">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#federation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Federation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#single-sign-on-sso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Single Sign-On (SSO)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-governance-risk-compliance-grc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Governance, Risk &amp; Compliance (GRC)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-cia-triad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. CIA Triad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-exam-tips-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Exam Tips &amp; Key Takeaways
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Exam Tips &amp; Key Takeaways">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#must-know-for-the-exam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Must-Know for the Exam
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-exam-traps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Common Exam Traps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#official-microsoft-learn-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Official Microsoft Learn Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="sc-900-domain-1-security-compliance-identity-concepts">SC-900 — Domain 1: Security, Compliance &amp; Identity Concepts</h1>
+<blockquote>
+<p><strong>Exam Weight:</strong> 10–15% &nbsp;|&nbsp; <strong>Difficulty:</strong> Foundational<br />
+<strong>Official Study Guide:</strong> <a href="https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900">SC-900 Study Guide</a><br />
+<strong>Learning Path:</strong> <a href="https://learn.microsoft.com/en-us/training/paths/describe-concepts-of-security-compliance-identity/">Describe concepts of security, compliance, and identity</a></p>
+</blockquote>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#1-shared-responsibility-model">Shared Responsibility Model</a></li>
+<li><a href="#2-defense-in-depth">Defense-in-Depth</a></li>
+<li><a href="#3-zero-trust-model">Zero Trust Model</a></li>
+<li><a href="#4-encryption--hashing">Encryption &amp; Hashing</a></li>
+<li><a href="#5-identity-concepts">Identity Concepts</a></li>
+<li><a href="#6-authentication--authorization">Authentication &amp; Authorization</a></li>
+<li><a href="#7-federation--single-sign-on">Federation &amp; Single Sign-On</a></li>
+<li><a href="#8-governance-risk--compliance-grc">Governance, Risk &amp; Compliance (GRC)</a></li>
+<li><a href="#9-cia-triad">CIA Triad</a></li>
+<li><a href="#10-exam-tips--key-takeaways">Exam Tips &amp; Key Takeaways</a></li>
+</ol>
+<hr />
+<h2 id="1-shared-responsibility-model">1. Shared Responsibility Model</h2>
+<p>The <strong>Shared Responsibility Model</strong> defines how security obligations are divided between a cloud provider (Microsoft Azure) and the customer. Responsibility shifts depending on the cloud service type.</p>
+<table>
+<thead>
+<tr>
+<th>Responsibility</th>
+<th>On-Premises</th>
+<th>IaaS</th>
+<th>PaaS</th>
+<th>SaaS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data &amp; Identity</td>
+<td>Customer</td>
+<td>Customer</td>
+<td>Customer</td>
+<td>Customer</td>
+</tr>
+<tr>
+<td>Applications</td>
+<td>Customer</td>
+<td>Customer</td>
+<td>Customer</td>
+<td>Provider</td>
+</tr>
+<tr>
+<td>Runtime / Middleware</td>
+<td>Customer</td>
+<td>Customer</td>
+<td>Provider</td>
+<td>Provider</td>
+</tr>
+<tr>
+<td>Operating System</td>
+<td>Customer</td>
+<td>Customer</td>
+<td>Provider</td>
+<td>Provider</td>
+</tr>
+<tr>
+<td>Virtualization</td>
+<td>Customer</td>
+<td>Provider</td>
+<td>Provider</td>
+<td>Provider</td>
+</tr>
+<tr>
+<td>Physical Infra</td>
+<td>Customer</td>
+<td>Provider</td>
+<td>Provider</td>
+<td>Provider</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service-model-definitions">Service Model Definitions</h3>
+<ul>
+<li><strong>IaaS (Infrastructure as a Service)</strong> — Customer manages OS, applications, and data. Provider manages physical infrastructure, networking, and virtualization. <em>(e.g., Azure Virtual Machines)</em></li>
+<li><strong>PaaS (Platform as a Service)</strong> — Provider manages OS and runtime; customer manages applications and data. <em>(e.g., Azure App Service, Azure SQL Database)</em></li>
+<li><strong>SaaS (Software as a Service)</strong> — Provider manages nearly everything; customer manages only data and user access. <em>(e.g., Microsoft 365, Dynamics 365)</em></li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>Critical Rule:</strong> In <strong>all</strong> cloud models, the customer always retains responsibility for <strong>data</strong>, <strong>identity</strong>, and <strong>endpoint devices</strong>.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/training/modules/describe-security-concepts-methodologies/2-describe-shared-responsibility-model">Describe the shared responsibility model</a></p>
+<hr />
+<h2 id="2-defense-in-depth">2. Defense-in-Depth</h2>
+<p><strong>Defense-in-Depth</strong> is a layered security strategy where multiple independent defensive controls protect data. If one layer is breached, subsequent layers continue to provide protection.</p>
+<h3 id="the-7-layers-outer-inner">The 7 Layers (outer → inner)</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Layer</th>
+<th>Purpose</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Physical</strong></td>
+<td>Protect physical data centers</td>
+<td>Badge readers, surveillance, locked doors</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Identity &amp; Access</strong></td>
+<td>Authenticate and authorize access</td>
+<td>MFA, Conditional Access, RBAC</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Perimeter</strong></td>
+<td>Protect network boundary</td>
+<td>DDoS Protection, Azure Firewall</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Network</strong></td>
+<td>Limit communication between resources</td>
+<td>NSGs, network segmentation, VPNs</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Compute</strong></td>
+<td>Secure endpoints and VMs</td>
+<td>Antimalware, OS patches, Defender for Endpoint</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Application</strong></td>
+<td>Ensure apps are secure</td>
+<td>Secure coding, vulnerability scanning</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Data</strong></td>
+<td>Protect data at rest and in transit</td>
+<td>Encryption, Azure Key Vault</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Exam Alert:</strong> The <strong>order</strong> of these layers is frequently tested. Memorize: Physical → Identity → Perimeter → Network → Compute → Application → Data.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/training/modules/describe-security-concepts-methodologies/3-describe-defense-depth">Describe defense-in-depth</a></p>
+<hr />
+<h2 id="3-zero-trust-model">3. Zero Trust Model</h2>
+<p><strong>Zero Trust</strong> is a security model that operates on the principle of <strong>"Never trust, always verify."</strong> It assumes every access request could be compromised, regardless of whether it originates inside or outside the network perimeter.</p>
+<h3 id="the-three-guiding-principles">The Three Guiding Principles</h3>
+<table>
+<thead>
+<tr>
+<th>Principle</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Verify Explicitly</strong></td>
+<td>Always authenticate and authorize based on all available data points: identity, location, device health, service/workload, data classification, and anomalies</td>
+</tr>
+<tr>
+<td><strong>Use Least Privilege Access</strong></td>
+<td>Limit user access with just-in-time (JIT) and just-enough-access (JEA), risk-based adaptive policies, and data protection</td>
+</tr>
+<tr>
+<td><strong>Assume Breach</strong></td>
+<td>Minimize blast radius, segment access, verify end-to-end encryption, and use analytics to detect and improve defenses</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-six-foundational-pillars">The Six Foundational Pillars</h3>
+<table>
+<thead>
+<tr>
+<th>Pillar</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Identities</strong></td>
+<td>Verify and secure every identity with strong authentication</td>
+</tr>
+<tr>
+<td><strong>Devices</strong></td>
+<td>Ensure device compliance and health before granting access</td>
+</tr>
+<tr>
+<td><strong>Applications</strong></td>
+<td>Discover all apps in use (including shadow IT), control permissions</td>
+</tr>
+<tr>
+<td><strong>Data</strong></td>
+<td>Classify, label, and protect data based on its sensitivity</td>
+</tr>
+<tr>
+<td><strong>Infrastructure</strong></td>
+<td>Use telemetry to detect attacks and anomalies in real time</td>
+</tr>
+<tr>
+<td><strong>Networks</strong></td>
+<td>Segment networks, use real-time threat protection and encryption</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Zero Trust ≠ Zero Access.</strong> It means verify before trusting — even for internal users. This contrasts with the traditional "castle-and-moat" perimeter model where internal traffic was implicitly trusted.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/training/modules/describe-security-concepts-methodologies/4-describe-zero-trust-model">Describe the Zero Trust model</a></p>
+<hr />
+<h2 id="4-encryption-hashing">4. Encryption &amp; Hashing</h2>
+<h3 id="encryption">Encryption</h3>
+<p>Encryption converts data into an unreadable format (ciphertext) using an algorithm and a key. It is <strong>reversible</strong> — data can be decrypted with the appropriate key.</p>
+<h4 id="types-of-encryption">Types of Encryption</h4>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Symmetric</strong></td>
+<td>Same key for encryption and decryption (e.g., AES)</td>
+<td>Fast; used for large data volumes</td>
+</tr>
+<tr>
+<td><strong>Asymmetric</strong></td>
+<td>Public/private key pair (e.g., RSA, TLS/SSL)</td>
+<td>Authentication, key exchange, digital signatures</td>
+</tr>
+</tbody>
+</table>
+<h4 id="encryption-states">Encryption States</h4>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>At Rest</strong></td>
+<td>Data stored on disk, database, or storage</td>
+<td>Azure Storage Service Encryption</td>
+</tr>
+<tr>
+<td><strong>In Transit</strong></td>
+<td>Data moving over a network</td>
+<td>TLS / HTTPS</td>
+</tr>
+<tr>
+<td><strong>In Use</strong></td>
+<td>Data actively being processed</td>
+<td>Confidential computing</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hashing">Hashing</h3>
+<p>Hashing is a <strong>one-way, irreversible</strong> function that converts data into a fixed-length hash value. It is used for:
+- Password storage (store the hash, not the password)
+- Data integrity verification (verify file hasn't been altered)</p>
+<table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th>Output Size</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MD5</td>
+<td>128-bit</td>
+<td>Deprecated; collision vulnerabilities</td>
+</tr>
+<tr>
+<td>SHA-256</td>
+<td>256-bit</td>
+<td>Current standard</td>
+</tr>
+<tr>
+<td>SHA-3</td>
+<td>Variable</td>
+<td>Latest generation</td>
+</tr>
+</tbody>
+</table>
+<h4 id="salting">Salting</h4>
+<p><strong>Salting</strong> adds a unique random value to each password before hashing. This prevents:
+- <strong>Rainbow table attacks</strong> — pre-computed hash lookups
+- <strong>Identical passwords producing identical hashes</strong></p>
+<blockquote>
+<p>🔑 <strong>Key Distinction:</strong> Encryption = reversible (with a key). Hashing = irreversible (one-way). This difference is tested directly.</p>
+</blockquote>
+<h3 id="azure-key-vault">Azure Key Vault</h3>
+<p><strong>Azure Key Vault</strong> is a cloud service for securely storing and managing:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Secrets</strong></td>
+<td>API keys, passwords, connection strings</td>
+</tr>
+<tr>
+<td><strong>Keys</strong></td>
+<td>Cryptographic keys for data encryption</td>
+</tr>
+<tr>
+<td><strong>Certificates</strong></td>
+<td>SSL/TLS certificates</td>
+</tr>
+</tbody>
+</table>
+<p>📖 <strong>References:</strong>
+- <a href="https://learn.microsoft.com/en-us/training/modules/describe-security-concepts-methodologies/5-describe-encryption-hashing">Describe encryption and hashing</a>
+- <a href="https://learn.microsoft.com/en-us/azure/key-vault/general/overview">Azure Key Vault overview</a></p>
+<hr />
+<h2 id="5-identity-concepts">5. Identity Concepts</h2>
+<p>In modern cloud environments, <strong>identity has become the new security perimeter</strong>. Traditional network-based perimeters are no longer sufficient as users work from anywhere, on any device.</p>
+<h3 id="core-identity-terms">Core Identity Terms</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Identity</strong></td>
+<td>A set of attributes that uniquely identifies a user, device, or service</td>
+</tr>
+<tr>
+<td><strong>Identity Provider (IdP)</strong></td>
+<td>A service that creates, maintains, and manages digital identities (e.g., Microsoft Entra ID)</td>
+</tr>
+<tr>
+<td><strong>Active Directory (AD)</strong></td>
+<td>Microsoft's on-premises directory service for managing users and resources</td>
+</tr>
+<tr>
+<td><strong>Directory Services</strong></td>
+<td>An organized collection of identity data enabling centralized management</td>
+</tr>
+<tr>
+<td><strong>Tenant</strong></td>
+<td>A dedicated, isolated instance of Microsoft Entra ID representing an organization</td>
+</tr>
+</tbody>
+</table>
+<h3 id="types-of-identities">Types of Identities</h3>
+<table>
+<thead>
+<tr>
+<th>Identity Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>User</strong></td>
+<td>Human identity — employees, students, external guests</td>
+</tr>
+<tr>
+<td><strong>Service Principal</strong></td>
+<td>Identity for an application or automated service</td>
+</tr>
+<tr>
+<td><strong>Managed Identity</strong></td>
+<td>Azure-managed identity for Azure services (no credential management needed)</td>
+</tr>
+<tr>
+<td><strong>Device</strong></td>
+<td>Physical or virtual device registered with Entra ID</td>
+</tr>
+</tbody>
+</table>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/training/modules/describe-identity-principles-concepts/2-describe-identity-as-the-primary-security-perimeter">Describe identity concepts</a></p>
+<hr />
+<h2 id="6-authentication-authorization">6. Authentication &amp; Authorization</h2>
+<h3 id="authentication-authn">Authentication (AuthN)</h3>
+<p><strong>Authentication</strong> is the process of <strong>proving who you are</strong> — verifying an identity before granting access.</p>
+<h3 id="authorization-authz">Authorization (AuthZ)</h3>
+<p><strong>Authorization</strong> determines <strong>what an authenticated identity is allowed to do</strong> — defining permissions and access levels.</p>
+<blockquote>
+<p>⚠️ <strong>Order matters:</strong> Authentication always occurs <strong>before</strong> authorization. You must first prove who you are, then the system decides what you can access.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Authentication</th>
+<th>Authorization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Question</strong></td>
+<td>Who are you?</td>
+<td>What can you do?</td>
+</tr>
+<tr>
+<td><strong>Verifies</strong></td>
+<td>Identity</td>
+<td>Permissions</td>
+</tr>
+<tr>
+<td><strong>Result</strong></td>
+<td>Identity confirmed</td>
+<td>Access granted/denied</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td>Entering a password</td>
+<td>Accessing a specific file share</td>
+</tr>
+</tbody>
+</table>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/training/modules/describe-identity-principles-concepts/3-describe-concept-of-authentication">Describe authentication and authorization</a></p>
+<hr />
+<h2 id="7-federation-single-sign-on">7. Federation &amp; Single Sign-On</h2>
+<h3 id="federation">Federation</h3>
+<p><strong>Federation</strong> establishes a <strong>trust relationship</strong> between two or more identity providers. It allows users to authenticate with their home IdP and access resources in a federated partner's environment — without creating separate accounts.</p>
+<p><strong>Example:</strong> A user logs in with their company Microsoft Entra ID credentials and can also access a partner's AWS environment without a second login.</p>
+<h3 id="single-sign-on-sso">Single Sign-On (SSO)</h3>
+<p><strong>SSO</strong> allows a user to sign in once and access multiple applications without re-authenticating. Benefits:
+- Reduces password fatigue
+- Centralizes access management
+- Easier to enforce consistent security policies</p>
+<p>📖 <strong>References:</strong>
+- <a href="https://learn.microsoft.com/en-us/training/modules/describe-identity-principles-concepts/5-describe-concept-of-federation">Describe federation</a>
+- <a href="https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/what-is-single-sign-on">What is SSO in Microsoft Entra ID</a></p>
+<hr />
+<h2 id="8-governance-risk-compliance-grc">8. Governance, Risk &amp; Compliance (GRC)</h2>
+<p><strong>GRC</strong> is a framework that helps organizations balance business goals with IT operations while managing risk and meeting regulatory requirements.</p>
+<table>
+<thead>
+<tr>
+<th>Pillar</th>
+<th>Definition</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Governance</strong></td>
+<td>Rules, practices, and processes for managing and directing an organization</td>
+<td>IT policies, data governance frameworks</td>
+</tr>
+<tr>
+<td><strong>Risk</strong></td>
+<td>Identifying, assessing, and mitigating potential threats to the organization</td>
+<td>Risk registers, vulnerability assessments</td>
+</tr>
+<tr>
+<td><strong>Compliance</strong></td>
+<td>Adhering to external laws, regulations, and standards</td>
+<td>GDPR, HIPAA, ISO 27001, SOC 2</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> These three pillars are related but distinct. Compliance = external regulations. Governance = internal rules. Risk = threat management.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/training/modules/describe-security-concepts-methodologies/6-describe-grc-concepts">Describe GRC concepts</a></p>
+<hr />
+<h2 id="9-cia-triad">9. CIA Triad</h2>
+<p>The <strong>CIA Triad</strong> is the foundational security model describing the three core goals of information security:</p>
+<table>
+<thead>
+<tr>
+<th>Pillar</th>
+<th>Definition</th>
+<th>Threat Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Confidentiality</strong></td>
+<td>Ensure data is accessible only to authorized parties</td>
+<td>Data breach, unauthorized access</td>
+</tr>
+<tr>
+<td><strong>Integrity</strong></td>
+<td>Ensure data is accurate and has not been tampered with</td>
+<td>Man-in-the-middle attack, data corruption</td>
+</tr>
+<tr>
+<td><strong>Availability</strong></td>
+<td>Ensure systems and data are available when needed</td>
+<td>DDoS attack, ransomware</td>
+</tr>
+</tbody>
+</table>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/training/modules/describe-security-concepts-methodologies/2-describe-shared-responsibility-model">Describe the CIA triad</a></p>
+<hr />
+<h2 id="10-exam-tips-key-takeaways">10. Exam Tips &amp; Key Takeaways</h2>
+<h3 id="must-know-for-the-exam">🎯 Must-Know for the Exam</h3>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>What to Remember</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Shared Responsibility</strong></td>
+<td>Customer ALWAYS owns Data + Identity in every model (IaaS/PaaS/SaaS)</td>
+</tr>
+<tr>
+<td><strong>Defense-in-Depth Layers</strong></td>
+<td>Order: Physical → Identity → Perimeter → Network → Compute → Application → Data</td>
+</tr>
+<tr>
+<td><strong>Zero Trust Principles</strong></td>
+<td>Verify Explicitly, Use Least Privilege, Assume Breach — all three required</td>
+</tr>
+<tr>
+<td><strong>Encryption vs Hashing</strong></td>
+<td>Encryption = reversible; Hashing = one-way/irreversible</td>
+</tr>
+<tr>
+<td><strong>Symmetric vs Asymmetric</strong></td>
+<td>Symmetric = same key (fast); Asymmetric = key pair (secure key exchange)</td>
+</tr>
+<tr>
+<td><strong>AuthN vs AuthZ</strong></td>
+<td>AuthN = prove identity; AuthZ = determine permissions. AuthN always first.</td>
+</tr>
+<tr>
+<td><strong>Federation</strong></td>
+<td>Trust relationship between IdPs — enables SSO across organizations</td>
+</tr>
+<tr>
+<td><strong>Azure Key Vault</strong></td>
+<td>Stores three types: Keys, Secrets, Certificates</td>
+</tr>
+<tr>
+<td><strong>GRC</strong></td>
+<td>Governance (internal rules), Risk (threat management), Compliance (external regulations)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="common-exam-traps">⚡ Common Exam Traps</h3>
+<ul>
+<li>Zero Trust is NOT about denying all access — it means <strong>verify before trusting</strong></li>
+<li>SaaS customers are responsible for <strong>data and user access</strong> — NOT the application layer</li>
+<li>Salting prevents <strong>rainbow table attacks</strong> (not brute force directly)</li>
+<li><strong>Authentication comes before authorization</strong> — never confuse the order</li>
+</ul>
+<hr />
+<h2 id="official-microsoft-learn-resources">📚 Official Microsoft Learn Resources</h2>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Learning Path: Describe concepts of security, compliance, and identity</td>
+<td><a href="https://learn.microsoft.com/en-us/training/paths/describe-concepts-of-security-compliance-identity/">Open</a></td>
+</tr>
+<tr>
+<td>Module: Describe security concepts and methodologies</td>
+<td><a href="https://learn.microsoft.com/en-us/training/modules/describe-security-concepts-methodologies/">Open</a></td>
+</tr>
+<tr>
+<td>Module: Describe identity principles and concepts</td>
+<td><a href="https://learn.microsoft.com/en-us/training/modules/describe-identity-principles-concepts/">Open</a></td>
+</tr>
+<tr>
+<td>SC-900 Certification Page</td>
+<td><a href="https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/">Open</a></td>
+</tr>
+<tr>
+<td>SC-900 Study Guide (Nov 2025)</td>
+<td><a href="https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900">Open</a></td>
+</tr>
+<tr>
+<td>Free Practice Assessment</td>
+<td><a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-900/practice/assessment?assessment-type=practice&amp;assessmentId=11">Open</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Last updated: May 2026 · Aligned with SC-900 exam objectives (November 2025 update)</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

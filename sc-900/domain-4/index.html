@@ -1,0 +1,3448 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Microsoft Security, Compliance and Identity Fundamentals">
+      
+      
+        <meta name="author" content="Luis">
+      
+      
+        <link rel="canonical" href="https://Quaijin.github.io/sc-900-study-plan/sc-900/domain-4/">
+      
+      
+        <link rel="prev" href="../domain-3/">
+      
+      
+        <link rel="next" href="../../labs/lab-01/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Domain 4 - SC-900 Study Plan</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sc-900-domain-4-capabilities-of-microsoft-compliance-solutions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SC-900 Study Plan" class="md-header__button md-logo" aria-label="SC-900 Study Plan" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SC-900 Study Plan
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Domain 4
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../domain-1/" class="md-tabs__link">
+          
+  
+  
+  SC-900
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../labs/lab-01/" class="md-tabs__link">
+          
+  
+  
+  Labs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../resources/links/" class="md-tabs__link">
+          
+  
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SC-900 Study Plan" class="md-nav__button md-logo" aria-label="SC-900 Study Plan" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SC-900 Study Plan
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SC-900
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SC-900
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 4
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-microsoft-service-trust-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Microsoft Service Trust Portal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Microsoft Service Trust Portal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-youll-find-on-the-stp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You'll Find on the STP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#who-uses-the-stp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Who Uses the STP?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-microsoft-privacy-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Microsoft Privacy Principles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-microsoft-priva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Microsoft Priva
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Microsoft Priva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#two-core-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two Core Modules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privacy-risk-management-risk-types-detected" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Privacy Risk Management — Risk Types Detected
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-microsoft-purview-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Microsoft Purview Portal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Microsoft Purview Portal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solutions-available-in-the-purview-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solutions Available in the Purview Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-microsoft-purview-compliance-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Microsoft Purview Compliance Manager
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Microsoft Purview Compliance Manager">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-the-compliance-score-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How the Compliance Score Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-regulations-standards-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Regulations &amp; Standards (Examples)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-data-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Data Classification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Data Classification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classification-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classification Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classification-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classification Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-sensitivity-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Sensitivity Labels
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Sensitivity Labels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-sensitivity-labels-can-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Sensitivity Labels Can Do
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label-application-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Label Application Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Label Scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#licensing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Licensing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-data-loss-prevention-dlp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Data Loss Prevention (DLP)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Data Loss Prevention (DLP)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-dlp-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How DLP Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-dlp-policies-apply" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where DLP Policies Apply
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlp-policy-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DLP Policy Actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlp-policy-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DLP Policy Tips
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-retention-policies-retention-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Retention Policies &amp; Retention Labels
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Retention Policies &amp; Retention Labels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-retention-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Retention Matters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retention-policies-vs-retention-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retention Policies vs. Retention Labels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retention-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retention Outcomes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-based-retention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Event-Based Retention
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-records-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Records Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Records Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-makes-something-a-record" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Makes Something a "Record"?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#record-vs-regulatory-record" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Record vs. Regulatory Record
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disposition-reviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disposition Reviews
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-insider-risk-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Insider Risk Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Insider Risk Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-risks-detected" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Risks Detected
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Design Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#policy-trigger-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Policy Trigger Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-communication-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Communication Compliance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Communication Compliance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-it-monitors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What It Monitors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-ediscovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. eDiscovery
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. eDiscovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ediscovery-solutions-in-microsoft-purview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        eDiscovery Solutions in Microsoft Purview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ediscovery-standard-vs-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        eDiscovery Standard vs. Premium
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legal-hold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Legal Hold
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custodians" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custodians
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-microsoft-purview-audit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Microsoft Purview Audit
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Microsoft Purview Audit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#audit-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audit Tiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-gets-logged" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Gets Logged
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-exam-tips-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Exam Tips &amp; Key Takeaways
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15. Exam Tips &amp; Key Takeaways">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#must-know-for-the-exam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Must-Know for the Exam
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#purview-solutions-quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Purview Solutions Quick Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-exam-traps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Common Exam Traps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#official-microsoft-learn-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Official Microsoft Learn Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Labs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Labs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../labs/lab-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 01 - Explore Entra ID
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../labs/lab-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 02 - Conditional Access
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Resources
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Useful Links
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/exam-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exam Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-microsoft-service-trust-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Microsoft Service Trust Portal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Microsoft Service Trust Portal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-youll-find-on-the-stp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What You'll Find on the STP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#who-uses-the-stp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Who Uses the STP?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-microsoft-privacy-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Microsoft Privacy Principles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-microsoft-priva" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Microsoft Priva
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Microsoft Priva">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#two-core-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two Core Modules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#privacy-risk-management-risk-types-detected" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Privacy Risk Management — Risk Types Detected
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-microsoft-purview-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Microsoft Purview Portal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Microsoft Purview Portal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solutions-available-in-the-purview-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solutions Available in the Purview Portal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-microsoft-purview-compliance-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Microsoft Purview Compliance Manager
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Microsoft Purview Compliance Manager">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-the-compliance-score-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How the Compliance Score Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-regulations-standards-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Regulations &amp; Standards (Examples)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-data-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Data Classification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Data Classification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classification-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classification Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classification-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classification Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-sensitivity-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Sensitivity Labels
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Sensitivity Labels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-sensitivity-labels-can-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Sensitivity Labels Can Do
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label-application-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Label Application Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Label Scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#licensing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Licensing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-data-loss-prevention-dlp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Data Loss Prevention (DLP)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Data Loss Prevention (DLP)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-dlp-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How DLP Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-dlp-policies-apply" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where DLP Policies Apply
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlp-policy-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DLP Policy Actions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dlp-policy-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DLP Policy Tips
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-retention-policies-retention-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Retention Policies &amp; Retention Labels
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Retention Policies &amp; Retention Labels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-retention-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Retention Matters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retention-policies-vs-retention-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retention Policies vs. Retention Labels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retention-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retention Outcomes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-based-retention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Event-Based Retention
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-records-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Records Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Records Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-makes-something-a-record" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Makes Something a "Record"?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#record-vs-regulatory-record" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Record vs. Regulatory Record
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disposition-reviews" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disposition Reviews
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-insider-risk-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Insider Risk Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Insider Risk Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-risks-detected" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Risks Detected
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-design-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Design Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#policy-trigger-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Policy Trigger Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-communication-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Communication Compliance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Communication Compliance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-it-monitors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What It Monitors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-ediscovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. eDiscovery
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. eDiscovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ediscovery-solutions-in-microsoft-purview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        eDiscovery Solutions in Microsoft Purview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ediscovery-standard-vs-premium" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        eDiscovery Standard vs. Premium
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legal-hold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Legal Hold
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custodians" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custodians
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-microsoft-purview-audit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Microsoft Purview Audit
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Microsoft Purview Audit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#audit-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audit Tiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-gets-logged" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Gets Logged
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-exam-tips-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Exam Tips &amp; Key Takeaways
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15. Exam Tips &amp; Key Takeaways">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#must-know-for-the-exam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Must-Know for the Exam
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#purview-solutions-quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 Purview Solutions Quick Reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-exam-traps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Common Exam Traps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#official-microsoft-learn-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Official Microsoft Learn Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="sc-900-domain-4-capabilities-of-microsoft-compliance-solutions">SC-900 — Domain 4: Capabilities of Microsoft Compliance Solutions</h1>
+<blockquote>
+<p><strong>Exam Weight:</strong> 20–25% &nbsp;|&nbsp; <strong>Difficulty:</strong> Intermediate–Advanced<br />
+<strong>Official Study Guide:</strong> <a href="https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900">SC-900 Study Guide</a><br />
+<strong>Learning Path:</strong> <a href="https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-compliance-solutions/">Describe capabilities of Microsoft compliance solutions</a></p>
+</blockquote>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#1-microsoft-service-trust-portal">Microsoft Service Trust Portal</a></li>
+<li><a href="#2-microsoft-privacy-principles">Microsoft Privacy Principles</a></li>
+<li><a href="#3-microsoft-priva">Microsoft Priva</a></li>
+<li><a href="#4-microsoft-purview-portal">Microsoft Purview Portal</a></li>
+<li><a href="#5-microsoft-purview-compliance-manager">Microsoft Purview Compliance Manager</a></li>
+<li><a href="#6-data-classification">Data Classification</a></li>
+<li><a href="#7-sensitivity-labels">Sensitivity Labels</a></li>
+<li><a href="#8-data-loss-prevention-dlp">Data Loss Prevention (DLP)</a></li>
+<li><a href="#9-retention-policies--retention-labels">Retention Policies &amp; Retention Labels</a></li>
+<li><a href="#10-records-management">Records Management</a></li>
+<li><a href="#11-insider-risk-management">Insider Risk Management</a></li>
+<li><a href="#12-communication-compliance">Communication Compliance</a></li>
+<li><a href="#13-ediscovery">eDiscovery</a></li>
+<li><a href="#14-microsoft-purview-audit">Microsoft Purview Audit</a></li>
+<li><a href="#15-exam-tips--key-takeaways">Exam Tips &amp; Key Takeaways</a></li>
+</ol>
+<hr />
+<h2 id="1-microsoft-service-trust-portal">1. Microsoft Service Trust Portal</h2>
+<p>The <strong>Microsoft Service Trust Portal (STP)</strong> is the public-facing hub where Microsoft publishes audit reports, compliance documentation, and trust information about its cloud services.</p>
+<p><strong>URL:</strong> <a href="https://servicetrust.microsoft.com">servicetrust.microsoft.com</a></p>
+<h3 id="what-youll-find-on-the-stp">What You'll Find on the STP</h3>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Certifications, Regulations &amp; Standards</strong></td>
+<td>ISO 27001, SOC 1/2/3, FedRAMP, GDPR, HIPAA/HITECH reports</td>
+</tr>
+<tr>
+<td><strong>Reports &amp; Documents</strong></td>
+<td>Third-party audit reports, data protection white papers, penetration test results</td>
+</tr>
+<tr>
+<td><strong>Industry &amp; Regional</strong></td>
+<td>Compliance resources tailored by industry (financial, healthcare) and region</td>
+</tr>
+<tr>
+<td><strong>My Library</strong></td>
+<td>Save and bookmark documents for quick access</td>
+</tr>
+<tr>
+<td><strong>Data Protection Resources</strong></td>
+<td>FAQs, data protection overviews, Microsoft Privacy Statement</td>
+</tr>
+</tbody>
+</table>
+<h3 id="who-uses-the-stp">Who Uses the STP?</h3>
+<ul>
+<li><strong>IT Administrators</strong> — assessing cloud risk and compliance posture</li>
+<li><strong>Compliance Officers</strong> — verifying regulatory adherence for audits</li>
+<li><strong>Legal teams</strong> — reviewing Microsoft's contractual commitments</li>
+<li><strong>Auditors</strong> — accessing third-party audit evidence</li>
+</ul>
+<blockquote>
+<p>💡 The STP is a <strong>read-only, publicly accessible</strong> resource (some documents require a Microsoft account). It does not manage your organization's compliance — that is Compliance Manager's role.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/get-started-with-service-trust-portal">Get started with the Microsoft Service Trust Portal</a></p>
+<hr />
+<h2 id="2-microsoft-privacy-principles">2. Microsoft Privacy Principles</h2>
+<p>Microsoft's six core privacy principles govern how Microsoft collects, uses, and protects customer data across all its products and services.</p>
+<table>
+<thead>
+<tr>
+<th>Principle</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Control</strong></td>
+<td>Customers are in control of their own data and privacy choices</td>
+</tr>
+<tr>
+<td><strong>Transparency</strong></td>
+<td>Microsoft is transparent about what data it collects and how it uses it</td>
+</tr>
+<tr>
+<td><strong>Security</strong></td>
+<td>Customer data is protected using strong security and encryption</td>
+</tr>
+<tr>
+<td><strong>Strong Legal Protections</strong></td>
+<td>Microsoft respects local privacy laws and fights for legal protections for customers</td>
+</tr>
+<tr>
+<td><strong>No Content-Based Targeting</strong></td>
+<td>Microsoft does not use customer email, files, or chats to target advertising</td>
+</tr>
+<tr>
+<td><strong>Benefits to You</strong></td>
+<td>Any data Microsoft collects is used to benefit the customer, not for unrelated purposes</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Exam Note:</strong> The <strong>"No Content-Based Targeting"</strong> principle is the one that specifically prohibits using email or document content for advertising — this is commonly tested.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/training/modules/describe-compliance-management-capabilities-microsoft/2-describe-microsoft-privacy-principles">Microsoft Privacy Principles</a></p>
+<hr />
+<h2 id="3-microsoft-priva">3. Microsoft Priva</h2>
+<p><strong>Microsoft Priva</strong> helps organizations proactively identify and manage privacy risks, and handle data subject rights requests efficiently.</p>
+<h3 id="two-core-modules">Two Core Modules</h3>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Privacy Risk Management</strong></td>
+<td>Proactively identify and manage privacy risks such as data overexposure, data transfers, and data minimization issues. Uses policies and alerts.</td>
+</tr>
+<tr>
+<td><strong>Subject Rights Requests</strong></td>
+<td>Streamline the process of handling GDPR/CCPA data subject rights requests (right to access, right to erasure, right to portability)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="privacy-risk-management-risk-types-detected">Privacy Risk Management — Risk Types Detected</h3>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data overexposure</strong></td>
+<td>Personal data accessible to more people than necessary</td>
+</tr>
+<tr>
+<td><strong>Data transfers</strong></td>
+<td>Personal data being moved to locations that may have lower privacy standards</td>
+</tr>
+<tr>
+<td><strong>Data minimization</strong></td>
+<td>Personal data retained longer than needed</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 Microsoft Priva is distinct from Microsoft Purview compliance tools. Priva focuses specifically on <strong>privacy</strong> (personal data and data subject rights), while Purview focuses on broader compliance, information protection, and governance.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/privacy/priva/priva-overview">Learn about Microsoft Priva</a></p>
+<hr />
+<h2 id="4-microsoft-purview-portal">4. Microsoft Purview Portal</h2>
+<p>The <strong>Microsoft Purview portal</strong> (purview.microsoft.com) is the unified compliance and data governance hub that consolidates all Microsoft Purview compliance and governance solutions.</p>
+<blockquote>
+<p>It replaces the older <strong>Microsoft 365 Compliance Center</strong> (compliance.microsoft.com).</p>
+</blockquote>
+<h3 id="solutions-available-in-the-purview-portal">Solutions Available in the Purview Portal</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Solutions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Information Protection</strong></td>
+<td>Sensitivity labels, DLP, information barriers</td>
+</tr>
+<tr>
+<td><strong>Information Governance</strong></td>
+<td>Retention policies, retention labels, records management</td>
+</tr>
+<tr>
+<td><strong>Insider Risk</strong></td>
+<td>Insider Risk Management, Communication Compliance</td>
+</tr>
+<tr>
+<td><strong>eDiscovery &amp; Legal</strong></td>
+<td>Content Search, eDiscovery Standard, eDiscovery Premium</td>
+</tr>
+<tr>
+<td><strong>Audit &amp; Compliance</strong></td>
+<td>Audit (Standard), Audit (Premium), Compliance Manager</td>
+</tr>
+<tr>
+<td><strong>Data Catalog</strong></td>
+<td>Data Map, Data Catalog (governance for data assets)</td>
+</tr>
+</tbody>
+</table>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/purview/purview-portal">Microsoft Purview portal overview</a></p>
+<hr />
+<h2 id="5-microsoft-purview-compliance-manager">5. Microsoft Purview Compliance Manager</h2>
+<p><strong>Compliance Manager</strong> is a risk-based compliance management tool in the Microsoft Purview portal that helps organizations manage, measure, and improve their compliance posture across regulations and standards.</p>
+<h3 id="key-components">Key Components</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Compliance Score</strong></td>
+<td>A risk-based score (higher = better compliance posture) that tracks how well your configuration aligns with applicable regulations</td>
+</tr>
+<tr>
+<td><strong>Assessments</strong></td>
+<td>Groups of controls mapped to a specific regulation or standard (e.g., GDPR, HIPAA, ISO 27001, NIST)</td>
+</tr>
+<tr>
+<td><strong>Improvement Actions</strong></td>
+<td>Specific, actionable steps you can take to implement controls and raise your score</td>
+</tr>
+<tr>
+<td><strong>Controls</strong></td>
+<td>The specific requirements of a regulation (mapped to both Microsoft-managed and customer-managed actions)</td>
+</tr>
+<tr>
+<td><strong>Templates</strong></td>
+<td>Pre-built assessment templates for 350+ regulations and standards globally</td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-the-compliance-score-works">How the Compliance Score Works</h3>
+<table>
+<thead>
+<tr>
+<th>Action Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Microsoft-managed actions</strong></td>
+<td>Controls implemented by Microsoft (automatic — Microsoft maintains these for cloud services)</td>
+</tr>
+<tr>
+<td><strong>Customer-managed actions</strong></td>
+<td>Controls you must implement in your own environment (manually marked as implemented)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Critical:</strong> The Compliance Score is <strong>NOT a legal guarantee</strong> of compliance with any regulation. It reflects the extent to which specified controls have been implemented. Legal and regulatory interpretation still requires your own legal counsel.</p>
+</blockquote>
+<h3 id="supported-regulations-standards-examples">Supported Regulations &amp; Standards (Examples)</h3>
+<p>GDPR, HIPAA/HITECH, ISO 27001, ISO 27018, NIST CSF, NIST 800-53, FedRAMP, SOC 2, PCI DSS, CCPA, and 350+ more.</p>
+<p>📖 <strong>References:</strong>
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/compliance-manager">What is Compliance Manager?</a>
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/compliance-manager-assessments">Compliance Manager assessments</a></p>
+<hr />
+<h2 id="6-data-classification">6. Data Classification</h2>
+<p>Before you can protect sensitive data, you need to know where it is and what kind of data it is. Microsoft Purview provides several tools to <strong>discover, classify, and understand</strong> your data.</p>
+<h3 id="classification-methods">Classification Methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>How It Works</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sensitive Information Types (SITs)</strong></td>
+<td>Pattern-based matching using keywords, regular expressions, and checksum validation</td>
+<td>Known structured data: credit card numbers, SSNs, passport numbers, IBAN</td>
+</tr>
+<tr>
+<td><strong>Trainable Classifiers</strong></td>
+<td>Machine learning models trained on example content to recognize categories</td>
+<td>Unstructured content: resumes, contracts, source code, financial documents</td>
+</tr>
+<tr>
+<td><strong>Exact Data Match (EDM)</strong></td>
+<td>Match against a specific database of sensitive records (e.g., your customer list)</td>
+<td>High-accuracy detection for known specific records</td>
+</tr>
+</tbody>
+</table>
+<h3 id="classification-tools">Classification Tools</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Content Explorer</strong></td>
+<td>Browse and view all items containing sensitive information or sensitivity labels across your organization</td>
+</tr>
+<tr>
+<td><strong>Activity Explorer</strong></td>
+<td>Monitor what's being done with labeled and sensitive content (label changes, policy matches, file activities)</td>
+</tr>
+<tr>
+<td><strong>Data Map</strong></td>
+<td>Discover and map data sources across your hybrid data estate (Microsoft Purview governance)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Content Explorer</strong> shows you <strong>what</strong> sensitive data exists. <strong>Activity Explorer</strong> shows you <strong>what's happening</strong> to that data. Both require appropriate RBAC roles to access.</p>
+</blockquote>
+<p>📖 <strong>References:</strong>
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/sensitive-information-type-learn-about">Learn about sensitive information types</a>
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/classifier-learn-about">Learn about trainable classifiers</a>
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/data-classification-content-explorer">Get started with content explorer</a></p>
+<hr />
+<h2 id="7-sensitivity-labels">7. Sensitivity Labels</h2>
+<p><strong>Sensitivity labels</strong> are metadata tags applied to content (documents, emails, meetings, sites) that define the sensitivity of the content and enforce protection settings wherever the content travels.</p>
+<h3 id="what-sensitivity-labels-can-do">What Sensitivity Labels Can Do</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Encryption</strong></td>
+<td>Restrict who can open, read, print, or edit the content</td>
+</tr>
+<tr>
+<td><strong>Access control</strong></td>
+<td>Define who can access the content and what they can do</td>
+</tr>
+<tr>
+<td><strong>Visual markings</strong></td>
+<td>Add headers, footers, or watermarks to documents</td>
+</tr>
+<tr>
+<td><strong>Container protection</strong></td>
+<td>Protect SharePoint sites, Teams, and Microsoft 365 Groups</td>
+</tr>
+<tr>
+<td><strong>Auto-labeling</strong></td>
+<td>Automatically apply labels based on detected sensitive content</td>
+</tr>
+<tr>
+<td><strong>Co-authoring</strong></td>
+<td>Supports encrypted documents with real-time collaboration in Microsoft 365 apps</td>
+</tr>
+</tbody>
+</table>
+<h3 id="label-application-methods">Label Application Methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Manual</strong></td>
+<td>Users choose a label when creating or modifying content</td>
+</tr>
+<tr>
+<td><strong>Default label</strong></td>
+<td>A label is automatically applied to new content without one</td>
+</tr>
+<tr>
+<td><strong>Recommended</strong></td>
+<td>Users are prompted to apply a suggested label</td>
+</tr>
+<tr>
+<td><strong>Automatic</strong></td>
+<td>Labels are applied automatically based on SITs or trainable classifiers (requires P2)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="label-scope">Label Scope</h3>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>What It Covers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Files &amp; emails</strong></td>
+<td>Word, Excel, PowerPoint files; Outlook emails</td>
+</tr>
+<tr>
+<td><strong>Meetings &amp; calendar items</strong></td>
+<td>Teams meetings and calendar invites</td>
+</tr>
+<tr>
+<td><strong>Groups &amp; sites</strong></td>
+<td>SharePoint sites, Teams, Microsoft 365 Groups</td>
+</tr>
+<tr>
+<td><strong>Schematized data assets</strong></td>
+<td>Azure SQL, Synapse, Azure Purview data assets</td>
+</tr>
+</tbody>
+</table>
+<h3 id="licensing">Licensing</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>License Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manual sensitivity labels</td>
+<td>Microsoft 365 E3 / Business Premium</td>
+</tr>
+<tr>
+<td>Auto-labeling (client-side)</td>
+<td>Microsoft 365 E3</td>
+</tr>
+<tr>
+<td>Auto-labeling (service-side)</td>
+<td><strong>Microsoft 365 E5 / Compliance E5</strong></td>
+</tr>
+</tbody>
+</table>
+<p>📖 <strong>References:</strong>
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels">Learn about sensitivity labels</a>
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/apply-sensitivity-label-automatically">Apply sensitivity labels automatically</a></p>
+<hr />
+<h2 id="8-data-loss-prevention-dlp">8. Data Loss Prevention (DLP)</h2>
+<p><strong>Data Loss Prevention (DLP)</strong> policies help prevent the accidental or intentional sharing of sensitive information outside your organization.</p>
+<h3 id="how-dlp-works">How DLP Works</h3>
+<ol>
+<li><strong>Detect</strong> — DLP scans content for sensitive information using SITs, sensitivity labels, or keywords</li>
+<li><strong>Evaluate</strong> — Content is evaluated against configured policy rules</li>
+<li><strong>Act</strong> — When a rule is matched, DLP takes the configured action</li>
+</ol>
+<h3 id="where-dlp-policies-apply">Where DLP Policies Apply</h3>
+<table>
+<thead>
+<tr>
+<th>Location</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Exchange Online</strong></td>
+<td>Email messages sent or received</td>
+</tr>
+<tr>
+<td><strong>SharePoint Online</strong></td>
+<td>Files stored in SharePoint sites</td>
+</tr>
+<tr>
+<td><strong>OneDrive for Business</strong></td>
+<td>Files stored in OneDrive</td>
+</tr>
+<tr>
+<td><strong>Microsoft Teams</strong></td>
+<td>Teams chat and channel messages</td>
+</tr>
+<tr>
+<td><strong>Microsoft 365 apps</strong></td>
+<td>Word, Excel, PowerPoint (endpoint DLP)</td>
+</tr>
+<tr>
+<td><strong>Endpoints</strong></td>
+<td>Windows 10/11 devices (Endpoint DLP — detect USB transfers, print, clipboard)</td>
+</tr>
+<tr>
+<td><strong>Third-party apps</strong></td>
+<td>Via Microsoft Defender for Cloud Apps integration</td>
+</tr>
+<tr>
+<td><strong>On-premises</strong></td>
+<td>On-premises file shares and SharePoint (requires DLP scanner)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dlp-policy-actions">DLP Policy Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Block sharing</strong></td>
+<td>Prevent the content from being sent or shared</td>
+</tr>
+<tr>
+<td><strong>Block with override</strong></td>
+<td>Block but allow users to provide a business justification to override</td>
+</tr>
+<tr>
+<td><strong>Notify user</strong></td>
+<td>Show a policy tip in the app, educating the user</td>
+</tr>
+<tr>
+<td><strong>Generate alert</strong></td>
+<td>Send an alert to compliance administrators</td>
+</tr>
+<tr>
+<td><strong>Restrict access</strong></td>
+<td>Remove external sharing permissions from a SharePoint item</td>
+</tr>
+<tr>
+<td><strong>Quarantine</strong></td>
+<td>Move the item to a quarantine folder (Endpoint DLP)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dlp-policy-tips">DLP Policy Tips</h3>
+<p><strong>Policy tips</strong> are in-app notifications shown to users when they are about to violate a DLP policy (e.g., before sending an email containing credit card numbers). They educate users in real time without blocking the action by default.</p>
+<p>📖 <strong>References:</strong>
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp">Learn about DLP</a>
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/get-started-with-dlp-policy-recommendations">Get started with DLP</a></p>
+<hr />
+<h2 id="9-retention-policies-retention-labels">9. Retention Policies &amp; Retention Labels</h2>
+<p><strong>Retention policies</strong> and <strong>retention labels</strong> ensure that content is kept for as long as legally required and deleted when no longer needed.</p>
+<h3 id="why-retention-matters">Why Retention Matters</h3>
+<p>Organizations face legal and regulatory requirements to:
+- <strong>Retain</strong> specific content for minimum periods (e.g., financial records for 7 years)
+- <strong>Delete</strong> content after a period to minimize legal exposure and storage costs
+- <strong>Declare</strong> content as immutable records that cannot be modified</p>
+<h3 id="retention-policies-vs-retention-labels">Retention Policies vs. Retention Labels</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Retention Policies</th>
+<th>Retention Labels</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Applied to</strong></td>
+<td>Entire locations (all mailboxes, all SharePoint sites)</td>
+<td>Individual items (specific documents, emails)</td>
+</tr>
+<tr>
+<td><strong>Granularity</strong></td>
+<td>Coarse — applies broadly</td>
+<td>Fine — item-level control</td>
+</tr>
+<tr>
+<td><strong>User interaction</strong></td>
+<td>None (applied automatically in the background)</td>
+<td>Can be applied manually or automatically</td>
+</tr>
+<tr>
+<td><strong>Records declaration</strong></td>
+<td>No</td>
+<td>✅ Yes — can declare items as records</td>
+</tr>
+<tr>
+<td><strong>Event-based retention</strong></td>
+<td>No</td>
+<td>✅ Yes — trigger retention based on an event</td>
+</tr>
+</tbody>
+</table>
+<h3 id="retention-outcomes">Retention Outcomes</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Retain only</strong></td>
+<td>Keep content for the specified period; no action at end</td>
+</tr>
+<tr>
+<td><strong>Delete only</strong></td>
+<td>Delete content after the specified period</td>
+</tr>
+<tr>
+<td><strong>Retain then delete</strong></td>
+<td>Keep for the period, then permanently delete</td>
+</tr>
+</tbody>
+</table>
+<h3 id="event-based-retention">Event-Based Retention</h3>
+<p><strong>Event-based retention</strong> starts the retention clock when a specific event occurs (e.g., an employee leaves, a contract expires, a product is discontinued). Used for records management.</p>
+<p>📖 <strong>References:</strong>
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/retention">Learn about retention policies and labels</a>
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/create-retention-policies">Create and configure retention policies</a></p>
+<hr />
+<h2 id="10-records-management">10. Records Management</h2>
+<p><strong>Records management</strong> in Microsoft Purview manages regulatory, legal, and business-critical records throughout their lifecycle — from creation, through active use, to final disposition.</p>
+<h3 id="what-makes-something-a-record">What Makes Something a "Record"?</h3>
+<p>When content is declared a <strong>record</strong> (via a retention label configured for records):
+- It <strong>cannot be modified or deleted</strong> until the retention period ends
+- All changes and deletions are blocked and logged
+- At the end of the retention period, a <strong>disposition review</strong> may be triggered</p>
+<h3 id="record-vs-regulatory-record">Record vs. Regulatory Record</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Editable</th>
+<th>Deletable by User</th>
+<th>Deletable by Admin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Record</strong></td>
+<td>❌ No</td>
+<td>❌ No</td>
+<td>✅ Yes (with justification)</td>
+</tr>
+<tr>
+<td><strong>Regulatory Record</strong></td>
+<td>❌ No</td>
+<td>❌ No</td>
+<td>❌ No (even admins cannot delete)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="disposition-reviews">Disposition Reviews</h3>
+<p>At the end of a retention period, items can go through a <strong>disposition review</strong> where authorized reviewers decide whether to:
+- Delete the item permanently
+- Extend the retention period
+- Relabel the item</p>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/records-management">Learn about records management</a></p>
+<hr />
+<h2 id="11-insider-risk-management">11. Insider Risk Management</h2>
+<p><strong>Microsoft Purview Insider Risk Management</strong> identifies, investigates, and acts on malicious or inadvertent insider risks within an organization. It correlates signals from Microsoft 365, HR systems, and endpoints.</p>
+<h3 id="types-of-risks-detected">Types of Risks Detected</h3>
+<table>
+<thead>
+<tr>
+<th>Risk Category</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data theft</strong></td>
+<td>Employee copying files to USB or personal cloud storage before leaving</td>
+</tr>
+<tr>
+<td><strong>Data leaks</strong></td>
+<td>Sensitive data being emailed externally or posted to collaboration tools</td>
+</tr>
+<tr>
+<td><strong>Security policy violations</strong></td>
+<td>Installing unauthorized software, accessing restricted systems</td>
+</tr>
+<tr>
+<td><strong>Offensive content</strong></td>
+<td>Harassment, threats, or discriminatory content in communications</td>
+</tr>
+<tr>
+<td><strong>Workplace fraud</strong></td>
+<td>Manipulating financial records or falsifying expense reports</td>
+</tr>
+</tbody>
+</table>
+<h3 id="key-design-principles">Key Design Principles</h3>
+<table>
+<thead>
+<tr>
+<th>Principle</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Privacy by default</strong></td>
+<td>User identities are <strong>pseudonymized</strong> (anonymized) by default — shown as "User1", "User2" etc. Only authorized reviewers can de-anonymize</td>
+</tr>
+<tr>
+<td><strong>Configurable policies</strong></td>
+<td>Define thresholds and triggers to minimize false positives</td>
+</tr>
+<tr>
+<td><strong>Workflow built-in</strong></td>
+<td>End-to-end workflow from alert → triage → investigation → action (notify, escalate, HR case)</td>
+</tr>
+<tr>
+<td><strong>Integration</strong></td>
+<td>Integrates with HR systems, Conditional Access, eDiscovery, and Microsoft Teams</td>
+</tr>
+</tbody>
+</table>
+<h3 id="policy-trigger-examples">Policy Trigger Examples</h3>
+<table>
+<thead>
+<tr>
+<th>Trigger</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Resignation / termination date</strong></td>
+<td>HR system signals a user is leaving — heightened monitoring for data exfiltration</td>
+</tr>
+<tr>
+<td><strong>Repeated security alerts</strong></td>
+<td>Multiple Defender for Endpoint alerts for the same user</td>
+</tr>
+<tr>
+<td><strong>Anomalous download volume</strong></td>
+<td>A user downloads significantly more data than their baseline</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Privacy note:</strong> Insider Risk Management is privacy-conscious by design. Pseudonymization ensures that analysts cannot see real user names until a case is formally opened and appropriate approvals are granted.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/insider-risk-management">Learn about insider risk management</a></p>
+<hr />
+<h2 id="12-communication-compliance">12. Communication Compliance</h2>
+<p><strong>Microsoft Purview Communication Compliance</strong> helps organizations detect, capture, and investigate inappropriate communications across Microsoft Teams, Exchange, Viva Engage (Yammer), and third-party platforms.</p>
+<h3 id="what-it-monitors">What It Monitors</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Regulatory compliance</strong></td>
+<td>Financial advisors discussing securities (SEC/FINRA requirements)</td>
+</tr>
+<tr>
+<td><strong>Code of conduct violations</strong></td>
+<td>Harassment, threats, discriminatory language</td>
+</tr>
+<tr>
+<td><strong>Conflict of interest</strong></td>
+<td>Internal communications that reveal inappropriate relationships</td>
+</tr>
+<tr>
+<td><strong>Sensitive information</strong></td>
+<td>Unauthorized sharing of confidential business information</td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-it-works">How It Works</h3>
+<ol>
+<li><strong>Configure policies</strong> — define what to monitor, who is in scope, and what reviewers will investigate</li>
+<li><strong>Capture communications</strong> — the service captures matching messages across configured channels</li>
+<li><strong>Review &amp; investigate</strong> — designated reviewers receive alerts and investigate flagged content</li>
+<li><strong>Take action</strong> — notify the user, escalate to HR/Legal, or create an eDiscovery case</li>
+</ol>
+<blockquote>
+<p>💡 Communication Compliance is distinct from <strong>DLP</strong>. DLP prevents data from leaving; Communication Compliance monitors the <strong>content of communications</strong> for inappropriate or non-compliant messaging.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/communication-compliance">Learn about communication compliance</a></p>
+<hr />
+<h2 id="13-ediscovery">13. eDiscovery</h2>
+<p><strong>eDiscovery</strong> (Electronic Discovery) is the process of identifying, collecting, and producing electronically stored information (ESI) for use as evidence in legal, regulatory, or internal investigations.</p>
+<h3 id="ediscovery-solutions-in-microsoft-purview">eDiscovery Solutions in Microsoft Purview</h3>
+<table>
+<thead>
+<tr>
+<th>Solution</th>
+<th>Description</th>
+<th>Key Capabilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Content Search</strong></td>
+<td>Basic search across Microsoft 365 content locations</td>
+<td>Search Exchange, SharePoint, OneDrive, Teams; export results</td>
+</tr>
+<tr>
+<td><strong>eDiscovery (Standard)</strong></td>
+<td>Case-based eDiscovery with hold capabilities</td>
+<td>Case management, legal holds, export</td>
+</tr>
+<tr>
+<td><strong>eDiscovery (Premium)</strong></td>
+<td>End-to-end enterprise eDiscovery workflow</td>
+<td>Custodian management, review sets, analytics, AI-driven deduplication, predictive coding</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ediscovery-standard-vs-premium">eDiscovery Standard vs. Premium</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Standard</th>
+<th>Premium</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case management</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Legal holds</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Content search &amp; export</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Custodian management</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Review sets</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Advanced analytics</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>AI deduplication / near-duplicate detection</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Predictive coding (ML relevance)</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>License required</td>
+<td>E3</td>
+<td><strong>E5 or Compliance add-on</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="legal-hold">Legal Hold</h3>
+<p>A <strong>legal hold</strong> (also called a litigation hold) preserves content that may be relevant to a legal matter. It prevents users from deleting or modifying content for the duration of the hold — even if a retention policy would normally delete it.</p>
+<h3 id="custodians">Custodians</h3>
+<p>In eDiscovery Premium, a <strong>custodian</strong> is a person who has control over data relevant to a case (e.g., the employee whose mailbox and OneDrive need to be preserved and searched).</p>
+<p>📖 <strong>References:</strong>
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/ediscovery">eDiscovery solutions in Microsoft Purview</a>
+- <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/overview-ediscovery-20">eDiscovery (Premium) overview</a></p>
+<hr />
+<h2 id="14-microsoft-purview-audit">14. Microsoft Purview Audit</h2>
+<p><strong>Microsoft Purview Audit</strong> records user and administrator activities across Microsoft 365 services to support security investigations, forensic analysis, and regulatory compliance.</p>
+<h3 id="audit-tiers">Audit Tiers</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Audit (Standard)</th>
+<th>Audit (Premium)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Log retention</strong></td>
+<td>90 days</td>
+<td><strong>1 year</strong> (default; extendable to <strong>10 years</strong> with add-on)</td>
+</tr>
+<tr>
+<td><strong>Access</strong></td>
+<td>Included in Microsoft 365 E3</td>
+<td>Requires <strong>Microsoft 365 E5</strong> or Compliance add-on</td>
+</tr>
+<tr>
+<td><strong>Intelligent insights</strong></td>
+<td>❌</td>
+<td>✅ (MailItemsAccessed and other high-value events)</td>
+</tr>
+<tr>
+<td><strong>API bandwidth</strong></td>
+<td>Standard</td>
+<td><strong>Higher bandwidth</strong> access for large-scale exports</td>
+</tr>
+<tr>
+<td><strong>Audit log search</strong></td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-gets-logged">What Gets Logged</h3>
+<table>
+<thead>
+<tr>
+<th>Activity Category</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Exchange Online</strong></td>
+<td>Mailbox access, email sends, folder operations</td>
+</tr>
+<tr>
+<td><strong>SharePoint &amp; OneDrive</strong></td>
+<td>File access, sharing, permission changes</td>
+</tr>
+<tr>
+<td><strong>Microsoft Teams</strong></td>
+<td>Messages sent, meetings created, member changes</td>
+</tr>
+<tr>
+<td><strong>Microsoft Entra ID</strong></td>
+<td>Sign-ins, user creation, role assignments</td>
+</tr>
+<tr>
+<td><strong>Microsoft Purview</strong></td>
+<td>Label changes, DLP policy matches, content searches</td>
+</tr>
+<tr>
+<td><strong>Azure</strong></td>
+<td>Azure resource operations (via Azure Activity Log)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Exam Note:</strong> Audit (Standard) retains logs for <strong>90 days</strong>. Audit (Premium) retains for <strong>1 year</strong> by default (extendable to 10 years). The higher-bandwidth API and intelligent insights (like MailItemsAccessed) are Premium-only features. These distinctions are tested.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/auditing-solutions-overview">Microsoft Purview Audit solutions overview</a></p>
+<hr />
+<h2 id="15-exam-tips-key-takeaways">15. Exam Tips &amp; Key Takeaways</h2>
+<h3 id="must-know-for-the-exam">🎯 Must-Know for the Exam</h3>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>What to Remember</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Service Trust Portal</strong></td>
+<td>Public hub for Microsoft audit reports &amp; compliance docs (servicetrust.microsoft.com)</td>
+</tr>
+<tr>
+<td><strong>Compliance Manager</strong></td>
+<td>Risk-based compliance score + improvement actions — NOT a legal guarantee</td>
+</tr>
+<tr>
+<td><strong>Compliance Score</strong></td>
+<td>Higher = better posture; reflects control implementation, not legal compliance</td>
+</tr>
+<tr>
+<td><strong>Sensitivity Labels</strong></td>
+<td>Travel with content; can encrypt, apply visual markings, restrict access</td>
+</tr>
+<tr>
+<td><strong>DLP</strong></td>
+<td>Prevents sensitive data from leaving the org; policy tips notify users in real time</td>
+</tr>
+<tr>
+<td><strong>Retention vs. DLP</strong></td>
+<td>Retention = how long to keep/delete; DLP = prevent inappropriate sharing</td>
+</tr>
+<tr>
+<td><strong>Retention Labels vs. Policies</strong></td>
+<td>Labels = item-level, can declare records; Policies = location-level, broad coverage</td>
+</tr>
+<tr>
+<td><strong>Records</strong></td>
+<td>Cannot be modified or deleted until retention period ends</td>
+</tr>
+<tr>
+<td><strong>Regulatory Records</strong></td>
+<td>Even more restrictive — admins cannot delete them either</td>
+</tr>
+<tr>
+<td><strong>Insider Risk</strong></td>
+<td>Uses pseudonymization by default; detects data theft, leaks, violations</td>
+</tr>
+<tr>
+<td><strong>Communication Compliance</strong></td>
+<td>Monitors communication content for conduct violations and regulatory requirements</td>
+</tr>
+<tr>
+<td><strong>eDiscovery Standard vs Premium</strong></td>
+<td>Premium adds custodians, review sets, analytics, predictive coding</td>
+</tr>
+<tr>
+<td><strong>Audit Standard vs Premium</strong></td>
+<td>Standard = 90 days; Premium = 1 year (default) with intelligent insights</td>
+</tr>
+<tr>
+<td><strong>Microsoft Priva</strong></td>
+<td>Privacy Risk Management + Subject Rights Requests (GDPR/CCPA)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="purview-solutions-quick-reference">📊 Purview Solutions Quick Reference</h3>
+<table>
+<thead>
+<tr>
+<th>Need</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Know where sensitive data is</td>
+<td>Data Classification (Content Explorer)</td>
+</tr>
+<tr>
+<td>Label and protect sensitive documents</td>
+<td>Sensitivity Labels</td>
+</tr>
+<tr>
+<td>Prevent sharing sensitive data externally</td>
+<td>DLP Policies</td>
+</tr>
+<tr>
+<td>Keep financial records for 7 years</td>
+<td>Retention Labels / Policies</td>
+</tr>
+<tr>
+<td>Immutably preserve legal records</td>
+<td>Records Management</td>
+</tr>
+<tr>
+<td>Detect risky employee behavior</td>
+<td>Insider Risk Management</td>
+</tr>
+<tr>
+<td>Monitor messaging for conduct violations</td>
+<td>Communication Compliance</td>
+</tr>
+<tr>
+<td>Respond to GDPR right to erasure requests</td>
+<td>Microsoft Priva — Subject Rights Requests</td>
+</tr>
+<tr>
+<td>Collect evidence for legal case</td>
+<td>eDiscovery (Standard or Premium)</td>
+</tr>
+<tr>
+<td>Investigate who accessed a mailbox</td>
+<td>Microsoft Purview Audit</td>
+</tr>
+<tr>
+<td>Measure compliance against GDPR / ISO 27001</td>
+<td>Compliance Manager</td>
+</tr>
+<tr>
+<td>View Microsoft's own audit reports</td>
+<td>Service Trust Portal</td>
+</tr>
+</tbody>
+</table>
+<h3 id="common-exam-traps">⚡ Common Exam Traps</h3>
+<ul>
+<li><strong>Compliance Score ≠ legal compliance</strong> — it's a risk indicator, not a guarantee</li>
+<li><strong>Retention labels</strong> can declare records; <strong>Retention policies</strong> cannot</li>
+<li><strong>DLP</strong> prevents <em>sharing</em>; <strong>Retention</strong> controls <em>keeping</em> vs <em>deleting</em></li>
+<li><strong>Insider Risk Management</strong> pseudonymizes identities by default — reviewers cannot see real names until a case is opened</li>
+<li><strong>Audit (Standard) = 90 days</strong> — not 1 year; that requires Premium</li>
+<li><strong>eDiscovery (Premium)</strong> adds custodian management and review sets — Standard does not have these</li>
+<li><strong>Microsoft Priva</strong> is a privacy tool (for personal data / data subjects) — it is separate from Purview compliance tools</li>
+<li><strong>Communication Compliance</strong> ≠ <strong>DLP</strong> — they solve different problems (messaging conduct vs. data exfiltration)</li>
+</ul>
+<hr />
+<h2 id="official-microsoft-learn-resources">📚 Official Microsoft Learn Resources</h2>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Learning Path: Describe capabilities of Microsoft compliance solutions</td>
+<td><a href="https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-compliance-solutions/">Open</a></td>
+</tr>
+<tr>
+<td>Module: Describe compliance management capabilities</td>
+<td><a href="https://learn.microsoft.com/en-us/training/modules/describe-compliance-management-capabilities-microsoft/">Open</a></td>
+</tr>
+<tr>
+<td>Module: Describe information protection and data lifecycle management</td>
+<td><a href="https://learn.microsoft.com/en-us/training/modules/describe-information-protection-governance-capabilities-microsoft-365/">Open</a></td>
+</tr>
+<tr>
+<td>Module: Describe insider risk capabilities</td>
+<td><a href="https://learn.microsoft.com/en-us/training/modules/describe-insider-risk-capabilities-microsoft-365/">Open</a></td>
+</tr>
+<tr>
+<td>Module: Describe eDiscovery and audit capabilities</td>
+<td><a href="https://learn.microsoft.com/en-us/training/modules/describe-ediscovery-capabilities-of-microsoft-365/">Open</a></td>
+</tr>
+<tr>
+<td>Microsoft Service Trust Portal</td>
+<td><a href="https://servicetrust.microsoft.com">Open</a></td>
+</tr>
+<tr>
+<td>Compliance Manager documentation</td>
+<td><a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/compliance-manager">Open</a></td>
+</tr>
+<tr>
+<td>Sensitivity labels documentation</td>
+<td><a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels">Open</a></td>
+</tr>
+<tr>
+<td>DLP documentation</td>
+<td><a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/dlp-learn-about-dlp">Open</a></td>
+</tr>
+<tr>
+<td>Retention policies documentation</td>
+<td><a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/retention">Open</a></td>
+</tr>
+<tr>
+<td>Insider Risk Management documentation</td>
+<td><a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/insider-risk-management">Open</a></td>
+</tr>
+<tr>
+<td>eDiscovery documentation</td>
+<td><a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/ediscovery">Open</a></td>
+</tr>
+<tr>
+<td>Microsoft Purview Audit documentation</td>
+<td><a href="https://learn.microsoft.com/en-us/microsoft-365/compliance/auditing-solutions-overview">Open</a></td>
+</tr>
+<tr>
+<td>Microsoft Priva documentation</td>
+<td><a href="https://learn.microsoft.com/en-us/privacy/priva/priva-overview">Open</a></td>
+</tr>
+<tr>
+<td>SC-900 Certification Page</td>
+<td><a href="https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/">Open</a></td>
+</tr>
+<tr>
+<td>Free Practice Assessment</td>
+<td><a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-900/practice/assessment?assessment-type=practice&amp;assessmentId=11">Open</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Last updated: May 2026 · Aligned with SC-900 exam objectives (November 2025 update)</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

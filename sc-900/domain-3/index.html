@@ -1,0 +1,3473 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Microsoft Security, Compliance and Identity Fundamentals">
+      
+      
+        <meta name="author" content="Luis">
+      
+      
+        <link rel="canonical" href="https://Quaijin.github.io/sc-900-study-plan/sc-900/domain-3/">
+      
+      
+        <link rel="prev" href="../domain-2/">
+      
+      
+        <link rel="next" href="../domain-4/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Domain 3 - SC-900 Study Plan</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sc-900-domain-3-capabilities-of-microsoft-security-solutions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SC-900 Study Plan" class="md-header__button md-logo" aria-label="SC-900 Study Plan" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SC-900 Study Plan
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Domain 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../domain-1/" class="md-tabs__link">
+          
+  
+  
+  SC-900
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../labs/lab-01/" class="md-tabs__link">
+          
+  
+  
+  Labs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../resources/links/" class="md-tabs__link">
+          
+  
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SC-900 Study Plan" class="md-nav__button md-logo" aria-label="SC-900 Study Plan" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SC-900 Study Plan
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SC-900
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SC-900
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 3
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-azure-ddos-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Azure DDoS Protection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Azure DDoS Protection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Service Tiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-ddos-attacks-mitigated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of DDoS Attacks Mitigated
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-azure-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Azure Firewall
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Azure Firewall">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-firewall-skus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Azure Firewall SKUs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-web-application-firewall-waf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Web Application Firewall (WAF)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Web Application Firewall (WAF)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#where-waf-can-be-deployed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where WAF Can Be Deployed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-waf-protects-against-owasp-top-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What WAF Protects Against (OWASP Top 10)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-network-security-groups-nsgs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Network Security Groups (NSGs)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Network Security Groups (NSGs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-nsgs-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How NSGs Work
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-nsgs-can-be-applied" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where NSGs Can Be Applied
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nsg-vs-azure-firewall-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NSG vs Azure Firewall Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-azure-bastion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Azure Bastion
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Azure Bastion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Benefits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-azure-key-vault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Azure Key Vault
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Azure Key Vault">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-azure-key-vault-stores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Azure Key Vault Stores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-features_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-microsoft-defender-for-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Microsoft Defender for Cloud
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Microsoft Defender for Cloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#two-core-pillars" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two Core Pillars
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secure-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secure Score
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-recommendations-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Recommendations &amp; Policies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defender-plans-cwpp-workload-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defender Plans (CWPP Workload Protection)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-cloud-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Cloud Support
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-microsoft-sentinel-siem-soar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Microsoft Sentinel (SIEM + SOAR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Microsoft Sentinel (SIEM + SOAR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#siem-vs-soar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SIEM vs SOAR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-four-core-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Four Core Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-sentinel-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Sentinel Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-data-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Data Sources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-microsoft-defender-xdr-suite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Microsoft Defender XDR Suite
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Microsoft Defender XDR Suite">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-xdr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is XDR?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-defender-xdr-product-suite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Defender XDR Product Suite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#three-major-microsoft-security-pillars-distinguished" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three Major Microsoft Security Pillars — Distinguished
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-microsoft-defender-for-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Microsoft Defender for Endpoint
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Microsoft Defender for Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Platforms
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-microsoft-defender-for-office-365" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Microsoft Defender for Office 365
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Microsoft Defender for Office 365">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plans
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-microsoft-defender-for-cloud-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Microsoft Defender for Cloud Apps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Microsoft Defender for Cloud Apps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-casb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is a CASB?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-microsoft-defender-for-identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Microsoft Defender for Identity
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. Microsoft Defender for Identity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-detections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Detections
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-microsoft-defender-vulnerability-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Microsoft Defender Vulnerability Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Microsoft Defender Vulnerability Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-capabilities_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-microsoft-defender-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Microsoft Defender Portal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15. Microsoft Defender Portal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-the-defender-portal-provides" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the Defender Portal Provides
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-exam-tips-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Exam Tips &amp; Key Takeaways
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16. Exam Tips &amp; Key Takeaways">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-three-pillars-know-these-cold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 The Three Pillars — Know These Cold
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-security-know-the-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Network Security — Know the Differences
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sentinel-component-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Sentinel Component Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-exam-traps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Common Exam Traps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#official-microsoft-learn-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Official Microsoft Learn Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domain 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Labs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Labs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../labs/lab-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 01 - Explore Entra ID
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../labs/lab-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lab 02 - Conditional Access
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Resources
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Useful Links
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/exam-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exam Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-azure-ddos-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Azure DDoS Protection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Azure DDoS Protection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-tiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Service Tiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-ddos-attacks-mitigated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of DDoS Attacks Mitigated
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-azure-firewall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Azure Firewall
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Azure Firewall">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-firewall-skus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Azure Firewall SKUs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-web-application-firewall-waf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Web Application Firewall (WAF)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Web Application Firewall (WAF)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#where-waf-can-be-deployed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where WAF Can Be Deployed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-waf-protects-against-owasp-top-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What WAF Protects Against (OWASP Top 10)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-network-security-groups-nsgs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Network Security Groups (NSGs)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Network Security Groups (NSGs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-nsgs-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How NSGs Work
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-nsgs-can-be-applied" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where NSGs Can Be Applied
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nsg-vs-azure-firewall-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NSG vs Azure Firewall Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-azure-bastion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Azure Bastion
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Azure Bastion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Benefits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-azure-key-vault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Azure Key Vault
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Azure Key Vault">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-azure-key-vault-stores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Azure Key Vault Stores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-features_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-microsoft-defender-for-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Microsoft Defender for Cloud
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Microsoft Defender for Cloud">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#two-core-pillars" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two Core Pillars
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secure-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secure Score
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-recommendations-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Recommendations &amp; Policies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defender-plans-cwpp-workload-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Defender Plans (CWPP Workload Protection)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-cloud-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Cloud Support
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-microsoft-sentinel-siem-soar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Microsoft Sentinel (SIEM + SOAR)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Microsoft Sentinel (SIEM + SOAR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#siem-vs-soar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SIEM vs SOAR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-four-core-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Four Core Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-sentinel-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Sentinel Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-data-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Data Sources
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-microsoft-defender-xdr-suite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Microsoft Defender XDR Suite
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Microsoft Defender XDR Suite">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-xdr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is XDR?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-defender-xdr-product-suite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Defender XDR Product Suite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#three-major-microsoft-security-pillars-distinguished" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three Major Microsoft Security Pillars — Distinguished
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-microsoft-defender-for-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Microsoft Defender for Endpoint
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Microsoft Defender for Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-platforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Platforms
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-microsoft-defender-for-office-365" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Microsoft Defender for Office 365
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Microsoft Defender for Office 365">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plans
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-microsoft-defender-for-cloud-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Microsoft Defender for Cloud Apps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Microsoft Defender for Cloud Apps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-casb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is a CASB?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-microsoft-defender-for-identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Microsoft Defender for Identity
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="13. Microsoft Defender for Identity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-detections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Detections
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Works
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-microsoft-defender-vulnerability-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Microsoft Defender Vulnerability Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Microsoft Defender Vulnerability Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-capabilities_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-microsoft-defender-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Microsoft Defender Portal
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15. Microsoft Defender Portal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-the-defender-portal-provides" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the Defender Portal Provides
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-exam-tips-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Exam Tips &amp; Key Takeaways
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="16. Exam Tips &amp; Key Takeaways">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-three-pillars-know-these-cold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 The Three Pillars — Know These Cold
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-security-know-the-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Network Security — Know the Differences
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sentinel-component-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Sentinel Component Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-exam-traps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚡ Common Exam Traps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#official-microsoft-learn-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Official Microsoft Learn Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="sc-900-domain-3-capabilities-of-microsoft-security-solutions">SC-900 — Domain 3: Capabilities of Microsoft Security Solutions</h1>
+<blockquote>
+<p><strong>Exam Weight:</strong> 35–40% &nbsp;|&nbsp; <strong>Difficulty:</strong> Intermediate–Advanced<br />
+<strong>Official Study Guide:</strong> <a href="https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900">SC-900 Study Guide</a><br />
+<strong>Learning Path:</strong> <a href="https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-security-solutions/">Describe capabilities of Microsoft security solutions</a></p>
+</blockquote>
+<hr />
+<blockquote>
+<p>⚠️ <strong>Highest-weight domain on the exam (35–40%).</strong> Prioritize this domain in your study time. Focus especially on distinguishing the three major pillars: Defender for Cloud, Microsoft Sentinel, and the Defender XDR suite.</p>
+</blockquote>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#1-azure-ddos-protection">Azure DDoS Protection</a></li>
+<li><a href="#2-azure-firewall">Azure Firewall</a></li>
+<li><a href="#3-web-application-firewall-waf">Web Application Firewall (WAF)</a></li>
+<li><a href="#4-network-security-groups-nsgs">Network Security Groups (NSGs)</a></li>
+<li><a href="#5-azure-bastion">Azure Bastion</a></li>
+<li><a href="#6-azure-key-vault">Azure Key Vault</a></li>
+<li><a href="#7-microsoft-defender-for-cloud">Microsoft Defender for Cloud</a></li>
+<li><a href="#8-microsoft-sentinel-siem--soar">Microsoft Sentinel (SIEM + SOAR)</a></li>
+<li><a href="#9-microsoft-defender-xdr-suite">Microsoft Defender XDR Suite</a></li>
+<li><a href="#10-microsoft-defender-for-endpoint">Microsoft Defender for Endpoint</a></li>
+<li><a href="#11-microsoft-defender-for-office-365">Microsoft Defender for Office 365</a></li>
+<li><a href="#12-microsoft-defender-for-cloud-apps">Microsoft Defender for Cloud Apps</a></li>
+<li><a href="#13-microsoft-defender-for-identity">Microsoft Defender for Identity</a></li>
+<li><a href="#14-microsoft-defender-vulnerability-management">Microsoft Defender Vulnerability Management</a></li>
+<li><a href="#15-microsoft-defender-portal">Microsoft Defender Portal</a></li>
+<li><a href="#16-exam-tips--key-takeaways">Exam Tips &amp; Key Takeaways</a></li>
+</ol>
+<hr />
+<h2 id="1-azure-ddos-protection">1. Azure DDoS Protection</h2>
+<p>A <strong>Distributed Denial of Service (DDoS)</strong> attack floods a resource with traffic to make it unavailable to legitimate users. Azure DDoS Protection defends against these attacks at scale.</p>
+<h3 id="service-tiers">Service Tiers</h3>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Cost</th>
+<th>Coverage</th>
+<th>Key Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DDoS Network Protection</strong> (formerly Basic)</td>
+<td>Free</td>
+<td>All Azure services automatically</td>
+<td>Always-on monitoring, basic volumetric attack mitigation</td>
+</tr>
+<tr>
+<td><strong>DDoS Network Protection</strong> (Standard/paid)</td>
+<td>Paid per VNet</td>
+<td>Resources in protected VNets</td>
+<td>Adaptive tuning, real-time attack telemetry, attack analytics, DDoS Rapid Response team, SLA guarantee, cost protection</td>
+</tr>
+</tbody>
+</table>
+<h3 id="types-of-ddos-attacks-mitigated">Types of DDoS Attacks Mitigated</h3>
+<table>
+<thead>
+<tr>
+<th>Attack Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Volumetric</strong></td>
+<td>Flood network bandwidth (e.g., UDP floods)</td>
+</tr>
+<tr>
+<td><strong>Protocol</strong></td>
+<td>Exploit weaknesses in Layer 3/4 protocols (e.g., SYN floods)</td>
+</tr>
+<tr>
+<td><strong>Resource (Application)</strong></td>
+<td>Target web application layer (Layer 7) — requires WAF for full protection</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>DDoS Network Protection (paid)</strong> includes adaptive tuning, which learns normal traffic patterns and adjusts mitigation policies automatically. It also includes a financial cost protection guarantee.</p>
+</blockquote>
+<p>📖 <strong>References:</strong>
+- <a href="https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview">Azure DDoS Protection overview</a>
+- <a href="https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-sku-comparison">DDoS Protection pricing tiers</a></p>
+<hr />
+<h2 id="2-azure-firewall">2. Azure Firewall</h2>
+<p><strong>Azure Firewall</strong> is a managed, cloud-native, stateful network security service that protects Azure Virtual Network resources. It is a fully managed Platform as a Service (PaaS) offering — no infrastructure to manage.</p>
+<h3 id="key-features">Key Features</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Stateful inspection</strong></td>
+<td>Tracks active connections; allows return traffic automatically</td>
+</tr>
+<tr>
+<td><strong>Built-in high availability</strong></td>
+<td>Scales automatically; no additional load balancers needed</td>
+</tr>
+<tr>
+<td><strong>FQDN filtering</strong></td>
+<td>Filter outbound traffic by domain name (e.g., allow *.microsoft.com)</td>
+</tr>
+<tr>
+<td><strong>Network traffic filtering</strong></td>
+<td>Allow/deny rules based on source IP, destination IP, port, and protocol</td>
+</tr>
+<tr>
+<td><strong>Application rules</strong></td>
+<td>FQDN-based filtering for HTTP/HTTPS traffic</td>
+</tr>
+<tr>
+<td><strong>Threat intelligence</strong></td>
+<td>Deny traffic from known malicious IP addresses and domains</td>
+</tr>
+<tr>
+<td><strong>IDPS</strong></td>
+<td>Intrusion Detection and Prevention System (Azure Firewall Premium)</td>
+</tr>
+<tr>
+<td><strong>TLS inspection</strong></td>
+<td>Inspect encrypted HTTPS traffic (Azure Firewall Premium)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="azure-firewall-skus">Azure Firewall SKUs</h3>
+<table>
+<thead>
+<tr>
+<th>SKU</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Standard</strong></td>
+<td>General network protection with FQDN filtering and threat intelligence</td>
+</tr>
+<tr>
+<td><strong>Premium</strong></td>
+<td>Highly sensitive environments requiring IDPS and TLS inspection</td>
+</tr>
+<tr>
+<td><strong>Basic</strong></td>
+<td>Small businesses needing essential firewall capabilities</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>NSG vs Azure Firewall:</strong> NSGs are simple allow/deny rules at the subnet/NIC level. Azure Firewall is a fully managed, stateful firewall with advanced features like FQDN filtering and threat intelligence. They are complementary, not mutually exclusive.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/azure/firewall/overview">Azure Firewall overview</a></p>
+<hr />
+<h2 id="3-web-application-firewall-waf">3. Web Application Firewall (WAF)</h2>
+<p><strong>Web Application Firewall (WAF)</strong> provides centralized protection for web applications from common exploits and vulnerabilities, particularly the <strong>OWASP Top 10</strong> (SQL injection, cross-site scripting, etc.).</p>
+<h3 id="where-waf-can-be-deployed">Where WAF Can Be Deployed</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Azure Application Gateway</strong></td>
+<td>WAF for web apps hosted in Azure (regional deployment)</td>
+</tr>
+<tr>
+<td><strong>Azure Front Door</strong></td>
+<td>WAF for globally distributed web apps and CDN traffic</td>
+</tr>
+<tr>
+<td><strong>Azure CDN</strong></td>
+<td>WAF for content delivery network endpoints</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-waf-protects-against-owasp-top-10">What WAF Protects Against (OWASP Top 10)</h3>
+<ul>
+<li>SQL Injection</li>
+<li>Cross-Site Scripting (XSS)</li>
+<li>Broken authentication</li>
+<li>Sensitive data exposure</li>
+<li>XML External Entities (XXE)</li>
+<li>Security misconfigurations</li>
+<li>And more...</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Key distinction:</strong> Azure Firewall protects <strong>network-level</strong> traffic. WAF specifically protects <strong>web applications</strong> (HTTP/HTTPS) from application-layer attacks.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/azure/web-application-firewall/overview">Azure Web Application Firewall overview</a></p>
+<hr />
+<h2 id="4-network-security-groups-nsgs">4. Network Security Groups (NSGs)</h2>
+<p><strong>Network Security Groups (NSGs)</strong> filter network traffic to and from Azure resources using <strong>inbound and outbound security rules</strong>.</p>
+<h3 id="how-nsgs-work">How NSGs Work</h3>
+<p>Each rule defines:
+- <strong>Source</strong> — IP address, CIDR range, service tag, or application security group
+- <strong>Destination</strong> — IP address, CIDR range, service tag, or application security group
+- <strong>Port</strong> — Specific port or port range
+- <strong>Protocol</strong> — TCP, UDP, or Any
+- <strong>Action</strong> — Allow or Deny
+- <strong>Priority</strong> — Lower number = higher priority (100–4096)</p>
+<h3 id="where-nsgs-can-be-applied">Where NSGs Can Be Applied</h3>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Subnet</strong></td>
+<td>Rules apply to all resources within the subnet</td>
+</tr>
+<tr>
+<td><strong>Network Interface (NIC)</strong></td>
+<td>Rules apply to a specific VM's network interface</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nsg-vs-azure-firewall-comparison">NSG vs Azure Firewall Comparison</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>NSG</th>
+<th>Azure Firewall</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Type</strong></td>
+<td>Basic packet filter</td>
+<td>Managed stateful firewall</td>
+</tr>
+<tr>
+<td><strong>FQDN filtering</strong></td>
+<td>❌ No</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>Threat intelligence</strong></td>
+<td>❌ No</td>
+<td>✅ Yes</td>
+</tr>
+<tr>
+<td><strong>Cost</strong></td>
+<td>Free</td>
+<td>Paid</td>
+</tr>
+<tr>
+<td><strong>Management</strong></td>
+<td>Manual rules</td>
+<td>Managed service</td>
+</tr>
+<tr>
+<td><strong>Best for</strong></td>
+<td>Simple subnet/NIC filtering</td>
+<td>Advanced, centralized network protection</td>
+</tr>
+</tbody>
+</table>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview">Network security groups overview</a></p>
+<hr />
+<h2 id="5-azure-bastion">5. Azure Bastion</h2>
+<p><strong>Azure Bastion</strong> provides secure, browser-based RDP and SSH access to Azure Virtual Machines <strong>directly from the Azure portal</strong>, without exposing VMs to the public internet.</p>
+<h3 id="key-benefits">Key Benefits</h3>
+<table>
+<thead>
+<tr>
+<th>Benefit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>No public IP required</strong></td>
+<td>VMs do not need a public IP address for remote access</td>
+</tr>
+<tr>
+<td><strong>No jump hosts needed</strong></td>
+<td>Access is provided through Azure Bastion's PaaS infrastructure</td>
+</tr>
+<tr>
+<td><strong>TLS encryption</strong></td>
+<td>All sessions are encrypted over TLS</td>
+</tr>
+<tr>
+<td><strong>NSG protection</strong></td>
+<td>Azure Bastion is deployed in a dedicated subnet (AzureBastionSubnet)</td>
+</tr>
+<tr>
+<td><strong>Hardened access</strong></td>
+<td>Protects against port scanning since no RDP/SSH ports are open on the VM</td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-it-works">How It Works</h3>
+<pre><code>User (browser) → Azure Portal → Azure Bastion → Private IP of VM
+                                (TLS/443)       (RDP/3389 or SSH/22)
+</code></pre>
+<blockquote>
+<p>⚠️ <strong>Exam Note:</strong> Azure Bastion does <strong>NOT</strong> require a public IP on the VM. Access is fully through the Azure portal using TLS on port 443.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/azure/bastion/bastion-overview">Azure Bastion overview</a></p>
+<hr />
+<h2 id="6-azure-key-vault">6. Azure Key Vault</h2>
+<p><strong>Azure Key Vault</strong> is a cloud service for securely storing and controlling access to secrets, encryption keys, and certificates.</p>
+<h3 id="what-azure-key-vault-stores">What Azure Key Vault Stores</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Secrets</strong></td>
+<td>Passwords, API keys, database connection strings, storage account keys</td>
+</tr>
+<tr>
+<td><strong>Keys</strong></td>
+<td>Cryptographic keys for data encryption (RSA, EC keys)</td>
+</tr>
+<tr>
+<td><strong>Certificates</strong></td>
+<td>SSL/TLS certificates (with auto-renewal support)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="key-features_1">Key Features</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Centralized secret management</strong></td>
+<td>Apps retrieve secrets via API — no hardcoded credentials</td>
+</tr>
+<tr>
+<td><strong>Access control</strong></td>
+<td>RBAC and Key Vault access policies control who can read/write</td>
+</tr>
+<tr>
+<td><strong>Audit logging</strong></td>
+<td>Every access is logged to Azure Monitor / Event Hub</td>
+</tr>
+<tr>
+<td><strong>HSM-backed keys</strong></td>
+<td>Keys can be protected by FIPS 140-2 Level 2 validated Hardware Security Modules</td>
+</tr>
+<tr>
+<td><strong>Soft delete</strong></td>
+<td>Deleted secrets/keys are recoverable for a configurable retention period</td>
+</tr>
+<tr>
+<td><strong>Integration</strong></td>
+<td>Native integration with Azure VMs, App Service, Azure Functions, AKS, and more</td>
+</tr>
+</tbody>
+</table>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/azure/key-vault/general/overview">Azure Key Vault overview</a></p>
+<hr />
+<h2 id="7-microsoft-defender-for-cloud">7. Microsoft Defender for Cloud</h2>
+<p><strong>Microsoft Defender for Cloud</strong> is a <strong>Cloud Security Posture Management (CSPM)</strong> and <strong>Cloud Workload Protection Platform (CWPP)</strong> solution that identifies weaknesses in cloud configurations and protects workloads across Azure, AWS, and GCP.</p>
+<h3 id="two-core-pillars">Two Core Pillars</h3>
+<table>
+<thead>
+<tr>
+<th>Pillar</th>
+<th>Name</th>
+<th>Cost</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CSPM</strong></td>
+<td>Cloud Security Posture Management</td>
+<td>Free tier available</td>
+<td>Continuously assess posture, provide Secure Score and recommendations</td>
+</tr>
+<tr>
+<td><strong>CWPP</strong></td>
+<td>Cloud Workload Protection Platform</td>
+<td>Paid Defender plans</td>
+<td>Advanced threat detection for specific workload types</td>
+</tr>
+</tbody>
+</table>
+<h3 id="secure-score">Secure Score</h3>
+<p>The <strong>Secure Score</strong> is a single numeric value (percentage) that summarizes your current security posture. The higher the score, the lower your identified risk.</p>
+<ul>
+<li>Implement <strong>security recommendations</strong> to raise the score</li>
+<li>Recommendations are grouped into <strong>security controls</strong> (logical sets of related security checks)</li>
+<li>Each control has a maximum score contribution</li>
+</ul>
+<h3 id="security-recommendations-policies">Security Recommendations &amp; Policies</h3>
+<ul>
+<li><strong>Security policies</strong> define desired configuration standards for workloads</li>
+<li>Defender for Cloud continuously assesses resources against these policies</li>
+<li>Non-compliant resources generate <strong>security recommendations</strong> with remediation steps</li>
+</ul>
+<h3 id="defender-plans-cwpp-workload-protection">Defender Plans (CWPP Workload Protection)</h3>
+<table>
+<thead>
+<tr>
+<th>Defender Plan</th>
+<th>Protects</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Defender for Servers</td>
+<td>Windows and Linux VMs</td>
+</tr>
+<tr>
+<td>Defender for Containers</td>
+<td>AKS clusters, container registries</td>
+</tr>
+<tr>
+<td>Defender for Databases</td>
+<td>SQL, Cosmos DB, PostgreSQL, MySQL</td>
+</tr>
+<tr>
+<td>Defender for Storage</td>
+<td>Azure Storage accounts</td>
+</tr>
+<tr>
+<td>Defender for App Service</td>
+<td>Azure App Service web apps</td>
+</tr>
+<tr>
+<td>Defender for Key Vault</td>
+<td>Azure Key Vault</td>
+</tr>
+<tr>
+<td>Defender for APIs</td>
+<td>Azure API Management APIs</td>
+</tr>
+</tbody>
+</table>
+<h3 id="multi-cloud-support">Multi-Cloud Support</h3>
+<p>Defender for Cloud supports <strong>Azure, AWS, and GCP</strong> through native connectors, providing a unified security posture view across multi-cloud environments.</p>
+<blockquote>
+<p>⚠️ <strong>Exam Alert:</strong> Defender for Cloud has a <strong>free CSPM tier</strong> (Secure Score + recommendations). CWPP (workload protection) requires <strong>paid Defender plans</strong>. This distinction is tested directly.</p>
+</blockquote>
+<p>📖 <strong>References:</strong>
+- <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction">What is Microsoft Defender for Cloud?</a>
+- <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/secure-score-security-controls">Secure Score in Defender for Cloud</a></p>
+<hr />
+<h2 id="8-microsoft-sentinel-siem-soar">8. Microsoft Sentinel (SIEM + SOAR)</h2>
+<p><strong>Microsoft Sentinel</strong> is a cloud-native <strong>Security Information and Event Management (SIEM)</strong> and <strong>Security Orchestration, Automation, and Response (SOAR)</strong> solution built on Azure.</p>
+<h3 id="siem-vs-soar">SIEM vs SOAR</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>SIEM</th>
+<th>SOAR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Function</strong></td>
+<td>Collect, aggregate, and analyze security data to detect threats</td>
+<td>Automate and orchestrate security responses</td>
+</tr>
+<tr>
+<td><strong>In Sentinel</strong></td>
+<td>Log analytics, analytics rules, incidents</td>
+<td>Playbooks (Logic Apps)</td>
+</tr>
+<tr>
+<td><strong>Output</strong></td>
+<td>Alerts and incidents</td>
+<td>Automated actions (block IP, disable user, etc.)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-four-core-capabilities">The Four Core Capabilities</h3>
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Description</th>
+<th>Key Components</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Collect</strong></td>
+<td>Ingest data from across the organization at cloud scale</td>
+<td>Data Connectors, Log Analytics workspace</td>
+</tr>
+<tr>
+<td><strong>Detect</strong></td>
+<td>Identify threats with built-in and custom analytics</td>
+<td>Analytics Rules, Fusion (ML-based detection)</td>
+</tr>
+<tr>
+<td><strong>Investigate</strong></td>
+<td>Explore threats using AI and hunt for suspicious activity</td>
+<td>Incident investigation, Hunting queries, Notebooks</td>
+</tr>
+<tr>
+<td><strong>Respond</strong></td>
+<td>Automate responses to detected threats</td>
+<td>Playbooks (Logic Apps), Automation rules</td>
+</tr>
+</tbody>
+</table>
+<h3 id="key-sentinel-components">Key Sentinel Components</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data Connectors</strong></td>
+<td>Connect data sources — Microsoft services, AWS, GCP, and 300+ third-party solutions</td>
+</tr>
+<tr>
+<td><strong>Log Analytics Workspace</strong></td>
+<td>The underlying data store for all ingested logs</td>
+</tr>
+<tr>
+<td><strong>Analytics Rules</strong></td>
+<td>Detect threats and create incidents/alerts (built-in or custom KQL queries)</td>
+</tr>
+<tr>
+<td><strong>Incidents</strong></td>
+<td>Grouping of related alerts representing a potential attack</td>
+</tr>
+<tr>
+<td><strong>Playbooks</strong></td>
+<td>Azure Logic Apps workflows that automate responses to incidents</td>
+</tr>
+<tr>
+<td><strong>Workbooks</strong></td>
+<td>Interactive dashboards for visualizing and monitoring collected data</td>
+</tr>
+<tr>
+<td><strong>Hunting Queries</strong></td>
+<td>Proactive, manual threat-hunting queries using KQL</td>
+</tr>
+<tr>
+<td><strong>Notebooks</strong></td>
+<td>Jupyter notebooks for advanced hunting and threat investigation</td>
+</tr>
+<tr>
+<td><strong>UEBA</strong></td>
+<td>User and Entity Behavior Analytics — detects anomalous behavior using ML</td>
+</tr>
+<tr>
+<td><strong>Threat Intelligence</strong></td>
+<td>Import and correlate threat intelligence indicators (IoCs)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="common-data-sources">Common Data Sources</h3>
+<ul>
+<li>Microsoft 365 Defender (Endpoint, Office 365, Identity, Cloud Apps)</li>
+<li>Microsoft Entra ID (sign-in logs, audit logs)</li>
+<li>Azure Activity and resource logs</li>
+<li>AWS CloudTrail / GCP Audit logs</li>
+<li>Third-party firewalls, SIEMs, and security solutions</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>Exam Alert:</strong> Know what each component does. <strong>Analytics Rules create incidents. Playbooks respond to incidents. Workbooks visualize data. Hunting queries are proactive (they do NOT automatically create alerts).</strong> Sentinel is a SIEM — it is different from Defender for Cloud (CSPM) and Defender XDR (endpoint/email/identity protection).</p>
+</blockquote>
+<p>📖 <strong>References:</strong>
+- <a href="https://learn.microsoft.com/en-us/azure/sentinel/overview">What is Microsoft Sentinel?</a>
+- <a href="https://learn.microsoft.com/en-us/azure/sentinel/connect-data-sources">Sentinel data connectors</a>
+- <a href="https://learn.microsoft.com/en-us/azure/sentinel/automate-responses-with-playbooks">Automation with playbooks</a></p>
+<hr />
+<h2 id="9-microsoft-defender-xdr-suite">9. Microsoft Defender XDR Suite</h2>
+<p><strong>Microsoft Defender XDR</strong> (Extended Detection and Response) is an integrated threat protection suite that natively coordinates detection, prevention, investigation, and response across <strong>endpoints, identity, email, and cloud applications</strong>.</p>
+<h3 id="what-is-xdr">What is XDR?</h3>
+<p>XDR breaks down security silos by:
+- Correlating signals across multiple security domains (endpoints, email, identity, cloud apps)
+- Providing a unified incident view and investigation experience
+- Automating cross-domain response actions</p>
+<h3 id="the-defender-xdr-product-suite">The Defender XDR Product Suite</h3>
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Protects</th>
+<th>Key Capability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Defender for Endpoint</strong></td>
+<td>Devices (Windows, macOS, Linux, iOS, Android)</td>
+<td>EDR, threat &amp; vulnerability management, attack surface reduction</td>
+</tr>
+<tr>
+<td><strong>Defender for Office 365</strong></td>
+<td>Email, SharePoint, OneDrive, Teams</td>
+<td>Anti-phishing, Safe Links, Safe Attachments, BEC protection</td>
+</tr>
+<tr>
+<td><strong>Defender for Cloud Apps</strong></td>
+<td>Cloud applications (SaaS)</td>
+<td>CASB — shadow IT discovery, data protection, threat detection</td>
+</tr>
+<tr>
+<td><strong>Defender for Identity</strong></td>
+<td>On-premises Active Directory</td>
+<td>Detect lateral movement, privilege escalation, compromised accounts</td>
+</tr>
+<tr>
+<td><strong>Defender Vulnerability Management</strong></td>
+<td>Endpoints and software</td>
+<td>Continuous vulnerability discovery, prioritization, and remediation</td>
+</tr>
+<tr>
+<td><strong>Defender Threat Intelligence</strong></td>
+<td>Security operations</td>
+<td>Threat actor profiles, IoCs, TTP intelligence</td>
+</tr>
+</tbody>
+</table>
+<h3 id="three-major-microsoft-security-pillars-distinguished">Three Major Microsoft Security Pillars — Distinguished</h3>
+<table>
+<thead>
+<tr>
+<th>Solution</th>
+<th>Type</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Defender XDR</strong></td>
+<td>XDR</td>
+<td>Endpoint, email, identity, cloud app threats</td>
+</tr>
+<tr>
+<td><strong>Defender for Cloud</strong></td>
+<td>CSPM + CWPP</td>
+<td>Cloud infrastructure posture and workload threats</td>
+</tr>
+<tr>
+<td><strong>Microsoft Sentinel</strong></td>
+<td>SIEM + SOAR</td>
+<td>Aggregate all signals, investigate, automate response</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Exam Alert:</strong> These three are the most commonly confused products on the SC-900 exam. Memorize their definitions and scopes clearly.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender">Microsoft Defender XDR overview</a></p>
+<hr />
+<h2 id="10-microsoft-defender-for-endpoint">10. Microsoft Defender for Endpoint</h2>
+<p><strong>Microsoft Defender for Endpoint</strong> is an enterprise endpoint security platform providing prevention, detection, investigation, and response across devices.</p>
+<h3 id="core-capabilities">Core Capabilities</h3>
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Threat &amp; Vulnerability Management (TVM)</strong></td>
+<td>Continuously discover and prioritize vulnerabilities and misconfigurations on devices</td>
+</tr>
+<tr>
+<td><strong>Attack Surface Reduction (ASR)</strong></td>
+<td>Rules that prevent common attack techniques (e.g., block Office macros, block process injection)</td>
+</tr>
+<tr>
+<td><strong>Next-Generation Protection</strong></td>
+<td>AI-powered antivirus and antimalware</td>
+</tr>
+<tr>
+<td><strong>Endpoint Detection &amp; Response (EDR)</strong></td>
+<td>Detect advanced attacks; provides timeline of device activity for investigation</td>
+</tr>
+<tr>
+<td><strong>Automated Investigation &amp; Response (AIR)</strong></td>
+<td>Automatically investigate alerts and take remediation actions</td>
+</tr>
+<tr>
+<td><strong>Threat Hunting</strong></td>
+<td>Proactively search for threats across device telemetry using KQL queries</td>
+</tr>
+<tr>
+<td><strong>Microsoft Secure Score for Devices</strong></td>
+<td>Measures device security posture</td>
+</tr>
+</tbody>
+</table>
+<h3 id="supported-platforms">Supported Platforms</h3>
+<p>Windows, Windows Server, macOS, Linux, iOS, Android</p>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint">Microsoft Defender for Endpoint overview</a></p>
+<hr />
+<h2 id="11-microsoft-defender-for-office-365">11. Microsoft Defender for Office 365</h2>
+<p><strong>Microsoft Defender for Office 365</strong> protects organizations against malicious threats posed by email messages, links (URLs), and collaboration tools (SharePoint, OneDrive, Teams).</p>
+<h3 id="key-features_2">Key Features</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Safe Attachments</strong></td>
+<td>Detonates email attachments in a sandbox (virtual environment) before delivery to detect malware</td>
+</tr>
+<tr>
+<td><strong>Safe Links</strong></td>
+<td>Scans URLs in emails and Office documents at time-of-click for malicious content</td>
+</tr>
+<tr>
+<td><strong>Anti-phishing</strong></td>
+<td>ML-based detection of phishing attempts including spear-phishing and whaling</td>
+</tr>
+<tr>
+<td><strong>Anti-spoofing</strong></td>
+<td>Protects against email domain spoofing</td>
+</tr>
+<tr>
+<td><strong>Business Email Compromise (BEC) Protection</strong></td>
+<td>Detects impersonation of executives and trusted parties</td>
+</tr>
+<tr>
+<td><strong>Attack Simulator</strong></td>
+<td>Run simulated phishing campaigns to train users</td>
+</tr>
+</tbody>
+</table>
+<h3 id="plans">Plans</h3>
+<table>
+<thead>
+<tr>
+<th>Plan</th>
+<th>Included In</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plan 1</strong></td>
+<td>Microsoft 365 Business Premium, Microsoft 365 E3</td>
+</tr>
+<tr>
+<td><strong>Plan 2</strong></td>
+<td>Microsoft 365 E5, Office 365 E5 (includes Attack Simulator, Threat Trackers, Explorer)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Safe Attachments</strong> opens attachments in a detonation chamber (sandbox) to detect zero-day malware <strong>before</strong> the email is delivered to the recipient's inbox.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/defender-for-office-365">Microsoft Defender for Office 365 overview</a></p>
+<hr />
+<h2 id="12-microsoft-defender-for-cloud-apps">12. Microsoft Defender for Cloud Apps</h2>
+<p><strong>Microsoft Defender for Cloud Apps</strong> is a <strong>Cloud Access Security Broker (CASB)</strong> that provides visibility and control over cloud app usage across your organization.</p>
+<h3 id="what-is-a-casb">What is a CASB?</h3>
+<p>A CASB sits between users and cloud services to enforce security policies and provide visibility into cloud app usage.</p>
+<h3 id="key-capabilities">Key Capabilities</h3>
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Shadow IT Discovery</strong></td>
+<td>Identify all cloud apps being used — including unsanctioned apps employees use without IT approval</td>
+</tr>
+<tr>
+<td><strong>App Sanctioning</strong></td>
+<td>Mark apps as sanctioned (approved) or unsanctioned (blocked)</td>
+</tr>
+<tr>
+<td><strong>Data Loss Prevention</strong></td>
+<td>Apply DLP policies to data stored in cloud apps (Box, Salesforce, etc.)</td>
+</tr>
+<tr>
+<td><strong>Threat Protection</strong></td>
+<td>Detect anomalous user behavior and threats in cloud apps</td>
+</tr>
+<tr>
+<td><strong>Compliance Assessment</strong></td>
+<td>Assess app compliance with regulations (GDPR, HIPAA, etc.)</td>
+</tr>
+<tr>
+<td><strong>Session Control</strong></td>
+<td>Monitor and control user sessions in real time (requires Conditional Access App Control)</td>
+</tr>
+<tr>
+<td><strong>Connected Apps</strong></td>
+<td>Direct API connectors to popular apps (Microsoft 365, Salesforce, Box, Dropbox, etc.)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Shadow IT</strong> refers to cloud apps used by employees without IT knowledge or approval — a significant security risk. Defender for Cloud Apps can discover shadow IT from firewall and proxy logs.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps">What is Microsoft Defender for Cloud Apps?</a></p>
+<hr />
+<h2 id="13-microsoft-defender-for-identity">13. Microsoft Defender for Identity</h2>
+<p><strong>Microsoft Defender for Identity</strong> (formerly Azure Advanced Threat Protection / Azure ATP) uses <strong>on-premises Active Directory signals</strong> to detect, identify, and investigate advanced threats, compromised identities, and malicious insider actions.</p>
+<h3 id="key-detections">Key Detections</h3>
+<table>
+<thead>
+<tr>
+<th>Threat</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lateral movement</strong></td>
+<td>Attackers moving from one system to another using stolen credentials</td>
+</tr>
+<tr>
+<td><strong>Pass-the-hash / Pass-the-ticket</strong></td>
+<td>Using stolen Kerberos tickets or NTLM hashes to authenticate</td>
+</tr>
+<tr>
+<td><strong>Privilege escalation</strong></td>
+<td>Gaining higher-level permissions than originally assigned</td>
+</tr>
+<tr>
+<td><strong>Reconnaissance</strong></td>
+<td>Enumeration of users, computers, and groups in Active Directory</td>
+</tr>
+<tr>
+<td><strong>Compromised credentials</strong></td>
+<td>Detecting credential theft via golden ticket attacks, DCSync, etc.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-it-works_1">How It Works</h3>
+<ol>
+<li><strong>Sensors</strong> installed on domain controllers capture AD traffic</li>
+<li>Sensor data is sent to the Defender for Identity cloud service</li>
+<li>ML and behavioral analytics detect suspicious activity</li>
+<li>Alerts appear in the <strong>Microsoft Defender portal</strong></li>
+</ol>
+<blockquote>
+<p>⚠️ <strong>Exam Note:</strong> Defender for Identity protects <strong>on-premises Active Directory</strong> — not Entra ID. Entra ID Protection handles cloud identity risk. They are complementary but distinct.</p>
+</blockquote>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/defender-for-identity/what-is">What is Microsoft Defender for Identity?</a></p>
+<hr />
+<h2 id="14-microsoft-defender-vulnerability-management">14. Microsoft Defender Vulnerability Management</h2>
+<p><strong>Microsoft Defender Vulnerability Management</strong> (MDVM) provides continuous asset visibility, intelligent risk-based assessment, and built-in remediation tools.</p>
+<h3 id="core-capabilities_1">Core Capabilities</h3>
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Asset inventory</strong></td>
+<td>Continuous discovery of all devices and software in the organization</td>
+</tr>
+<tr>
+<td><strong>Vulnerability discovery</strong></td>
+<td>Identify CVEs, security misconfigurations, and missing patches</td>
+</tr>
+<tr>
+<td><strong>Risk-based prioritization</strong></td>
+<td>Score vulnerabilities based on exploitability, business impact, and threat intelligence</td>
+</tr>
+<tr>
+<td><strong>Remediation workflows</strong></td>
+<td>Create remediation tickets directly integrated with IT ticketing systems</td>
+</tr>
+<tr>
+<td><strong>Security recommendations</strong></td>
+<td>Specific actionable steps to reduce risk</td>
+</tr>
+<tr>
+<td><strong>Weaknesses view</strong></td>
+<td>CVE-based view of vulnerabilities across the organization</td>
+</tr>
+</tbody>
+</table>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management">Microsoft Defender Vulnerability Management overview</a></p>
+<hr />
+<h2 id="15-microsoft-defender-portal">15. Microsoft Defender Portal</h2>
+<p>The <strong>Microsoft Defender portal</strong> (security.microsoft.com) is the <strong>unified security operations center</strong> for the entire Defender XDR suite. It integrates all signals, incidents, and response capabilities in one place.</p>
+<h3 id="what-the-defender-portal-provides">What the Defender Portal Provides</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unified incidents queue</strong></td>
+<td>All alerts from all Defender products correlated into incidents</td>
+</tr>
+<tr>
+<td><strong>Advanced Hunting</strong></td>
+<td>KQL-based queries across all Defender XDR data</td>
+</tr>
+<tr>
+<td><strong>Threat Analytics</strong></td>
+<td>Reports on current threat campaigns and vulnerabilities</td>
+</tr>
+<tr>
+<td><strong>Secure Score</strong></td>
+<td>Microsoft Secure Score for identities, devices, and apps</td>
+</tr>
+<tr>
+<td><strong>Action Center</strong></td>
+<td>View and manage automated investigation and response actions</td>
+</tr>
+<tr>
+<td><strong>Threat Intelligence</strong></td>
+<td>Threat actor profiles and indicators of compromise (IoCs)</td>
+</tr>
+<tr>
+<td><strong>Microsoft Sentinel integration</strong></td>
+<td>Unified SecOps experience combining XDR and SIEM in one portal</td>
+</tr>
+</tbody>
+</table>
+<p>📖 <strong>Reference:</strong> <a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender-portal">Microsoft Defender portal overview</a></p>
+<hr />
+<h2 id="16-exam-tips-key-takeaways">16. Exam Tips &amp; Key Takeaways</h2>
+<h3 id="the-three-pillars-know-these-cold">🎯 The Three Pillars — Know These Cold</h3>
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Type</th>
+<th>Protects</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Microsoft Sentinel</strong></td>
+<td>SIEM + SOAR</td>
+<td>Aggregate logs organization-wide; detect, investigate, respond via playbooks</td>
+</tr>
+<tr>
+<td><strong>Defender for Cloud</strong></td>
+<td>CSPM + CWPP</td>
+<td>Cloud infrastructure posture (Azure/AWS/GCP) + workload threat protection</td>
+</tr>
+<tr>
+<td><strong>Defender XDR</strong></td>
+<td>XDR</td>
+<td>Endpoints, email, identity (on-prem AD), cloud apps</td>
+</tr>
+</tbody>
+</table>
+<h3 id="network-security-know-the-differences">🎯 Network Security — Know the Differences</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Purpose</th>
+<th>Key Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NSG</strong></td>
+<td>Filter traffic at subnet/NIC level</td>
+<td>Simple allow/deny rules (free)</td>
+</tr>
+<tr>
+<td><strong>Azure Firewall</strong></td>
+<td>Managed stateful network firewall</td>
+<td>FQDN filtering, threat intelligence</td>
+</tr>
+<tr>
+<td><strong>WAF</strong></td>
+<td>Protect web apps from OWASP Top 10</td>
+<td>SQL injection, XSS protection</td>
+</tr>
+<tr>
+<td><strong>Azure Bastion</strong></td>
+<td>Secure RDP/SSH without public IP</td>
+<td>Browser-based via Azure portal</td>
+</tr>
+<tr>
+<td><strong>DDoS Protection</strong></td>
+<td>Defend against volumetric attacks</td>
+<td>Free basic tier; paid for advanced</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sentinel-component-functions">🎯 Sentinel Component Functions</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Does What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data Connectors</td>
+<td>Bring logs IN to Sentinel</td>
+</tr>
+<tr>
+<td>Analytics Rules</td>
+<td>Detect threats, CREATE incidents</td>
+</tr>
+<tr>
+<td>Playbooks</td>
+<td>Automated RESPONSE to incidents</td>
+</tr>
+<tr>
+<td>Workbooks</td>
+<td>VISUALIZE data</td>
+</tr>
+<tr>
+<td>Hunting Queries</td>
+<td>PROACTIVE manual threat search</td>
+</tr>
+<tr>
+<td>Incidents</td>
+<td>Grouped alerts representing a potential attack</td>
+</tr>
+</tbody>
+</table>
+<h3 id="common-exam-traps">⚡ Common Exam Traps</h3>
+<ul>
+<li><strong>Defender for Cloud ≠ Defender XDR ≠ Microsoft Sentinel</strong> — all three are different products</li>
+<li><strong>Defender for Identity</strong> = on-premises AD protection; <strong>Entra ID Protection</strong> = cloud identity risk</li>
+<li><strong>Safe Attachments</strong> uses a <strong>sandbox/detonation chamber</strong> before email delivery</li>
+<li><strong>Shadow IT</strong> is discovered by <strong>Defender for Cloud Apps (CASB)</strong></li>
+<li><strong>DDoS Network Protection (free)</strong> is always on for all Azure services — the paid tier adds SLA and telemetry</li>
+<li>Azure Bastion requires <strong>no public IP</strong> on the VM — this is tested directly</li>
+<li><strong>Hunting queries</strong> in Sentinel are proactive — they do <strong>NOT</strong> automatically create alerts</li>
+</ul>
+<hr />
+<h2 id="official-microsoft-learn-resources">📚 Official Microsoft Learn Resources</h2>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Learning Path: Describe capabilities of Microsoft security solutions</td>
+<td><a href="https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-security-solutions/">Open</a></td>
+</tr>
+<tr>
+<td>Module: Describe basic security capabilities in Azure</td>
+<td><a href="https://learn.microsoft.com/en-us/training/modules/describe-basic-security-capabilities-azure/">Open</a></td>
+</tr>
+<tr>
+<td>Module: Describe security management capabilities of Azure</td>
+<td><a href="https://learn.microsoft.com/en-us/training/modules/describe-security-management-capabilities-of-azure/">Open</a></td>
+</tr>
+<tr>
+<td>Module: Describe security capabilities of Microsoft Sentinel</td>
+<td><a href="https://learn.microsoft.com/en-us/training/modules/describe-security-capabilities-of-azure-sentinel/">Open</a></td>
+</tr>
+<tr>
+<td>Module: Describe threat protection with Microsoft Defender XDR</td>
+<td><a href="https://learn.microsoft.com/en-us/training/modules/describe-threat-protection-with-microsoft-365-defender/">Open</a></td>
+</tr>
+<tr>
+<td>Azure DDoS Protection docs</td>
+<td><a href="https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview">Open</a></td>
+</tr>
+<tr>
+<td>Azure Firewall docs</td>
+<td><a href="https://learn.microsoft.com/en-us/azure/firewall/overview">Open</a></td>
+</tr>
+<tr>
+<td>Microsoft Sentinel docs</td>
+<td><a href="https://learn.microsoft.com/en-us/azure/sentinel/overview">Open</a></td>
+</tr>
+<tr>
+<td>Defender for Cloud docs</td>
+<td><a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction">Open</a></td>
+</tr>
+<tr>
+<td>Defender XDR docs</td>
+<td><a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender">Open</a></td>
+</tr>
+<tr>
+<td>Defender for Endpoint docs</td>
+<td><a href="https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint">Open</a></td>
+</tr>
+<tr>
+<td>Defender for Office 365 docs</td>
+<td><a href="https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/defender-for-office-365">Open</a></td>
+</tr>
+<tr>
+<td>Defender for Cloud Apps docs</td>
+<td><a href="https://learn.microsoft.com/en-us/defender-cloud-apps/what-is-defender-for-cloud-apps">Open</a></td>
+</tr>
+<tr>
+<td>Defender for Identity docs</td>
+<td><a href="https://learn.microsoft.com/en-us/defender-for-identity/what-is">Open</a></td>
+</tr>
+<tr>
+<td>SC-900 Certification Page</td>
+<td><a href="https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/">Open</a></td>
+</tr>
+<tr>
+<td>Free Practice Assessment</td>
+<td><a href="https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-900/practice/assessment?assessment-type=practice&amp;assessmentId=11">Open</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Last updated: May 2026 · Aligned with SC-900 exam objectives (November 2025 update)</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
